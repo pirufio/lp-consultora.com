@@ -1,0 +1,18 @@
+# Correct MIME types for modern assets (some shared hosts don't set these)
+AddType font/woff2 .woff2
+AddType image/svg+xml .svg
+AddType text/css .css
+
+# Long cache for static assets with stable filenames
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+# Gzip text assets
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml
+</IfModule>
