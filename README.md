@@ -31,6 +31,8 @@ Upload the **contents of `dist/`** to the web root (so `index.html` sits at the 
 index.html
 .htaccess                     woff2/svg MIME types, caching, gzip
 .well-known/                  acme-challenge, pki-validation (Let's Encrypt; usually host-managed)
+contact.php                   contact form endpoint (+ contact-config.php, created on the server)
+lib/PHPMailer/                SMTP library used by contact.php
 assets/
   tailwind.css                compiled Tailwind (static)
   fonts/                      fonts.css + f0..f11.woff2 (Inter, Montserrat subsets)
@@ -42,6 +44,30 @@ assets/
   Logo footer-85ce6ab7.svg          footer logo
   clients/                    10 client logo PNGs
 ```
+
+---
+
+## Contact form
+
+The form in the footer (`#contacto`) posts to `contact.php`, which emails the message via SMTP
+(PHPMailer, vendored in `lib/PHPMailer/`) or PHP `mail()` as a fallback. Requires PHP 7.4+ (cPanel
+hosting). Antispam: honeypot field, minimum fill time, per-IP rate limit, Origin check.
+
+**One-time setup on the server (cPanel):**
+
+1. Use the existing `lara@lp-consultora.com` mailbox as sender and recipient. It is a **GoDaddy
+   Professional Email (Titan)** mailbox, so SMTP is `smtpout.secureserver.net`, 465/`ssl` (per GoDaddy's
+   help page for Professional Email powered by Titan), with the full email as username and the same
+   password as the webmail. (If it were a cPanel
+   mailbox, *Email Accounts → Connect Devices* lists the host, usually `mail.lp-consultora.com`.) If the mailbox is **Microsoft 365** use
+   `smtp.office365.com`, 587/`tls` (SMTP AUTH must be enabled for the mailbox); if **Google
+   Workspace** use `smtp.gmail.com`, 465/`ssl` with an App Password.
+2. Copy `contact-config.sample.php` to `contact-config.php` **on the server** and fill in the
+   recipient, sender and SMTP password. This file is git-ignored and blocked by `.htaccess`.
+3. Upload `contact.php`, `lib/` and the updated `index.html` and `.htaccess`.
+4. Send a test message from the live site and check the inbox (and spam folder).
+
+Form copy lives in the `cf.*` keys of the `I18N` dictionary.
 
 ---
 

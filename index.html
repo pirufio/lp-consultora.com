@@ -116,6 +116,127 @@
       .blob-shape-2 {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       }
+      /* Contact form */
+      .cf {
+        width: 100%;
+        max-width: 40rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: left;
+        background: #fff;
+        border: 1px solid #e6e8ed;
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+        box-shadow: 0 1px 3px rgba(25, 28, 32, 0.06);
+      }
+      .cf-intro {
+        color: #494456;
+        text-align: center;
+      }
+      .cf-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      @media (min-width: 640px) {
+        .cf {
+          padding: 2rem;
+        }
+        .cf-row {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .cf-field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.375rem;
+      }
+      .cf-field label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #191c20;
+      }
+      .cf input[type="text"],
+      .cf input[type="email"],
+      .cf input[type="tel"],
+      .cf select,
+      .cf textarea {
+        width: 100%;
+        font: inherit;
+        color: #191c20;
+        background: #f2f3f9;
+        border: 1px solid #cbc3d9;
+        border-radius: 0.75rem;
+        padding: 0.75rem 1rem;
+      }
+      .cf textarea {
+        resize: vertical;
+        min-height: 7rem;
+      }
+      .cf input:focus-visible,
+      .cf select:focus-visible,
+      .cf textarea:focus-visible,
+      .cf-consent input:focus-visible {
+        outline: 2px solid #5700d4;
+        outline-offset: 2px;
+        border-color: #5700d4;
+      }
+      .cf-hp {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+      .cf-consent {
+        display: flex;
+        gap: 0.625rem;
+        align-items: flex-start;
+        font-size: 14px;
+        color: #494456;
+        cursor: pointer;
+      }
+      .cf-consent input {
+        margin-top: 0.2rem;
+        width: 1.1rem;
+        height: 1.1rem;
+        accent-color: #5700d4;
+        flex-shrink: 0;
+      }
+      .cf-submit {
+        font: inherit;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(135deg, #006782 0%, #5700d4 100%);
+        border: 0;
+        border-radius: 9999px;
+        padding: 0.875rem 1.5rem;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .cf-submit:hover {
+        opacity: 0.92;
+      }
+      .cf-submit:focus-visible {
+        outline: 2px solid #5700d4;
+        outline-offset: 3px;
+      }
+      .cf-submit:disabled {
+        opacity: 0.6;
+        cursor: wait;
+      }
+      .cf-status {
+        min-height: 1.5rem;
+        text-align: center;
+        font-size: 14px;
+      }
+      .cf-status--ok {
+        color: #0b6b3a;
+      }
+      .cf-status--error {
+        color: #ba1a1a;
+      }
       .hide-scrollbar {
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -809,6 +930,56 @@
         <h2 class="font-headline-sm text-headline-sm text-on-surface" data-i18n="footer.contact">
           Contacto
         </h2>
+        <!-- Contact form (handled by /contact.php) -->
+        <form id="contactForm" class="cf" action="/contact.php" method="post">
+          <p class="cf-intro" data-i18n="cf.intro">
+            Contanos qué necesitás y te respondemos a la brevedad.
+          </p>
+          <div class="cf-row">
+            <div class="cf-field">
+              <label for="cf-name" data-i18n="cf.name">Nombre</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required />
+            </div>
+            <div class="cf-field">
+              <label for="cf-email" data-i18n="cf.email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="150" required />
+            </div>
+          </div>
+          <div class="cf-row">
+            <div class="cf-field">
+              <label for="cf-phone" data-i18n="cf.phone">Teléfono (opcional)</label>
+              <input id="cf-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" />
+            </div>
+            <div class="cf-field">
+              <label for="cf-topic" data-i18n="cf.topic">Motivo de la consulta</label>
+              <select id="cf-topic" name="topic" required>
+                <option value="company" data-i18n="cf.topic.company">Empresa que busca talento</option>
+                <option value="candidate" data-i18n="cf.topic.candidate">Candidato/a</option>
+                <option value="other" data-i18n="cf.topic.other">Otra consulta</option>
+              </select>
+            </div>
+          </div>
+          <div class="cf-field">
+            <label for="cf-message" data-i18n="cf.message">Mensaje</label>
+            <textarea id="cf-message" name="message" rows="5" minlength="5" maxlength="3000" required></textarea>
+          </div>
+          <!-- Honeypot: hidden from people, bots fill it in -->
+          <div class="cf-hp" aria-hidden="true">
+            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+          <label class="cf-consent">
+            <input type="checkbox" name="consent" value="1" required />
+            <span data-i18n="cf.consent">Acepto que LP Consultora use estos datos para responder mi consulta.</span>
+          </label>
+          <button type="submit" class="cf-submit" id="cfSubmit" data-i18n="cf.send">Enviar consulta</button>
+          <p id="cfStatus" class="cf-status" role="status" aria-live="polite"></p>
+          <noscript>
+            <p class="cf-status cf-status--error">
+              Activá JavaScript para usar el formulario o escribinos a
+              <a href="mailto:lara@lp-consultora.com">lara@lp-consultora.com</a>.
+            </p>
+          </noscript>
+        </form>
         <!-- Contact icons -->
         <div class="flex gap-4">
           <a
@@ -1064,6 +1235,22 @@
           "bnav.contact": "Contacto",
           "footer.tagline": "Especialistas en la selección y gestión de talento humano.",
           "footer.contact": "Contacto",
+          "cf.intro": "Contanos qué necesitás y te respondemos a la brevedad.",
+          "cf.name": "Nombre",
+          "cf.email": "Email",
+          "cf.phone": "Teléfono (opcional)",
+          "cf.topic": "Motivo de la consulta",
+          "cf.topic.company": "Empresa que busca talento",
+          "cf.topic.candidate": "Candidato/a",
+          "cf.topic.other": "Otra consulta",
+          "cf.message": "Mensaje",
+          "cf.consent": "Acepto que LP Consultora use estos datos para responder mi consulta.",
+          "cf.send": "Enviar consulta",
+          "cf.sending": "Enviando…",
+          "cf.ok": "¡Gracias! Recibimos tu consulta y te responderemos pronto.",
+          "cf.err.invalid": "Revisá los datos del formulario e intentá de nuevo.",
+          "cf.err.rate": "Enviaste varias consultas seguidas. Probá de nuevo más tarde.",
+          "cf.err.server": "No pudimos enviar tu consulta. Escribinos a lara@lp-consultora.com.",
           "footer.loc": "Ubicación: Cordoba, Argentina.",
           "map.pill": "Cordoba, Argentina",
           "footer.privacy": "Privacidad",
@@ -1128,6 +1315,22 @@
           "bnav.contact": "Contact",
           "footer.tagline": "Specialists in the selection and management of human talent.",
           "footer.contact": "Contact",
+          "cf.intro": "Tell us what you need and we will get back to you shortly.",
+          "cf.name": "Name",
+          "cf.email": "Email",
+          "cf.phone": "Phone (optional)",
+          "cf.topic": "Reason for contact",
+          "cf.topic.company": "Company hiring",
+          "cf.topic.candidate": "Candidate",
+          "cf.topic.other": "Other inquiry",
+          "cf.message": "Message",
+          "cf.consent": "I agree that LP Consultora may use this data to reply to my inquiry.",
+          "cf.send": "Send message",
+          "cf.sending": "Sending…",
+          "cf.ok": "Thank you! We received your message and will reply soon.",
+          "cf.err.invalid": "Please check the form and try again.",
+          "cf.err.rate": "You sent several messages in a row. Please try again later.",
+          "cf.err.server": "We could not send your message. Please email lara@lp-consultora.com.",
           "footer.loc": "Location: Córdoba, Argentina.",
           "map.pill": "Córdoba, Argentina",
           "footer.privacy": "Privacy",
@@ -1193,6 +1396,56 @@
       });
 
       applyLang(detectLang());
+
+      // ---- Contact form ----
+      (function () {
+        const form = document.getElementById("contactForm");
+        if (!form) return;
+        const submit = document.getElementById("cfSubmit");
+        const status = document.getElementById("cfStatus");
+        const openedAt = Date.now();
+        const t = (key) => (I18N[document.documentElement.lang] || I18N.es)[key];
+
+        function show(key, kind) {
+          status.textContent = t(key);
+          status.className = "cf-status cf-status--" + kind;
+        }
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const data = new FormData(form);
+          data.set("t", String(Date.now() - openedAt));
+          data.set("lang", document.documentElement.lang);
+
+          submit.disabled = true;
+          submit.textContent = t("cf.sending");
+          status.textContent = "";
+          try {
+            const res = await fetch(form.action, {
+              method: "POST",
+              body: data,
+              headers: { Accept: "application/json" },
+              signal: AbortSignal.timeout(30000),
+            });
+            const json = await res.json().catch(() => ({}));
+            if (res.ok && json.ok) {
+              form.reset();
+              show("cf.ok", "ok");
+            } else if (json.error === "rate") {
+              show("cf.err.rate", "error");
+            } else if (res.status >= 500 || !json.error) {
+              show("cf.err.server", "error");
+            } else {
+              show("cf.err.invalid", "error");
+            }
+          } catch (err) {
+            show("cf.err.server", "error");
+          } finally {
+            submit.disabled = false;
+            submit.textContent = t("cf.send");
+          }
+        });
+      })();
     </script>
   </body>
 </html>
