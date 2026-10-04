@@ -7,14 +7,18 @@ return [
     // Where contact-form messages are delivered.
     'to' => 'lara@lp-consultora.com',
 
-    // Sender shown in the mail. Use a real mailbox on this domain (SPF/DKIM
-    // alignment is what keeps these out of spam). Same as 'to' is fine: the
-    // visitor's address goes in Reply-To, so hitting "Reply" answers them.
-    'from' => 'lara@lp-consultora.com',
+    // Sender shown in the mail. Must be an address on a domain verified in Resend (it does not
+    // need to be a real mailbox). The visitor's address goes in Reply-To, so "Reply" answers them.
+    'from' => 'web@lp-consultora.com',
     'from_name' => 'Web LP Consultora',
 
     // Hosts allowed to POST to contact.php (checked against the Origin header).
     'allowed_hosts' => ['lp-consultora.com', 'www.lp-consultora.com'],
+
+    // Resend (https://resend.com): paste an API key (starts with "re_") to send through its HTTPS API.
+    // Needs lp-consultora.com verified in Resend (DNS records), and 'from' on that domain.
+    // Takes priority over SMTP / mail(). Works on hosts that block outbound SMTP, like GoDaddy cPanel.
+    'resend_api_key' => '',
 
     // SMTP login for the mailbox above. 'user' => '' (default here) sends through the hosting's own
     // mail via PHP mail(): GoDaddy cPanel hosting blocks outbound SMTP to external servers (including

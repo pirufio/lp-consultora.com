@@ -1,2 +1,4 @@
 dist
 contact-config.php
+.env
+.DS_Store

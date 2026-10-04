@@ -56,6 +56,59 @@ function clean_text($value, $max)
     return utf8_cut(trim((string) $value), $max);
 }
 
+/** Send through the Resend HTTPS API (port 443, works where outbound SMTP is blocked). */
+function resend_send($apiKey, $from, $to, $replyTo, $subject, $text)
+{
+    $payload = json_encode([
+        'from' => $from,
+        'to' => [$to],
+        'reply_to' => $replyTo,
+        'subject' => $subject,
+        'text' => $text,
+    ]);
+    $headers = [
+        'Authorization: Bearer ' . $apiKey,
+        'Content-Type: application/json',
+        'User-Agent: lp-consultora-contact/1.0',
+    ];
+
+    if (function_exists('curl_init')) {
+        $ch = curl_init('https://api.resend.com/emails');
+        curl_setopt_array($ch, [
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => $payload,
+            CURLOPT_HTTPHEADER => $headers,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CONNECTTIMEOUT => 10,
+            CURLOPT_TIMEOUT => 20,
+        ]);
+        $response = curl_exec($ch);
+        $status = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $curlError = curl_error($ch);
+        curl_close($ch);
+    } else {
+        $context = stream_context_create(['http' => [
+            'method' => 'POST',
+            'header' => implode("\r\n", $headers),
+            'content' => $payload,
+            'timeout' => 20,
+            'ignore_errors' => true,
+        ]]);
+        $response = @file_get_contents('https://api.resend.com/emails', false, $context);
+        $status = 0;
+        if (isset($http_response_header[0]) && preg_match('/\s(\d{3})\s/', $http_response_header[0], $m)) {
+            $status = (int) $m[1];
+        }
+        $curlError = $response === false ? 'request failed' : '';
+    }
+
+    if ($status >= 200 && $status < 300) {
+        return true;
+    }
+    error_log('contact.php: Resend HTTP ' . $status . ' ' . $curlError . ' ' . substr((string) $response, 0, 300));
+    return false;
+}
+
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     header('Allow: POST');
     fail(405, 'invalid');
@@ -173,11 +226,21 @@ $body = implode("\n", [
     'IP: ' . $ip . '  |  ' . date('Y-m-d H:i:s T'),
 ]);
 
-// Send: SMTP through PHPMailer when credentials are configured, PHP mail() otherwise.
+// Send: Resend API when a key is configured, else SMTP through PHPMailer when credentials
+// are configured, else PHP mail().
 $smtp = $config['smtp'];
 $sent = false;
 try {
-    if ($smtp['user'] !== '') {
+    if (!empty($config['resend_api_key'])) {
+        $sent = resend_send(
+            $config['resend_api_key'],
+            $config['from_name'] . ' <' . $config['from'] . '>',
+            $config['to'],
+            $email,
+            $subject,
+            $body
+        );
+    } elseif ($smtp['user'] !== '') {
         require __DIR__ . '/lib/PHPMailer/Exception.php';
         require __DIR__ . '/lib/PHPMailer/PHPMailer.php';
         require __DIR__ . '/lib/PHPMailer/SMTP.php';
