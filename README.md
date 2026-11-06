@@ -37,10 +37,10 @@ assets/
   tailwind.css                compiled Tailwind (static)
   fonts/                      fonts.css + f0..f11.woff2 (Inter, Montserrat subsets)
   favicon.svg
-  og-image-v2.jpg             1200x630 social share image (current; the filename is versioned because
-                              WhatsApp/Facebook cache previews by URL — bump to -v3 when it changes)
-  og-image.jpg                same image, kept so the old URL doesn't 404
-  Mariposa superior-*.png, Mariposa inferior-*.png   the two wings of the logo mark (hero art)
+  og-image-v3.jpg             1200x630 social share image (current; the filename is versioned because
+                              WhatsApp/Facebook cache previews by URL — bump to -v4 when it changes)
+  og-image.jpg, og-image-v2.jpg   same image, kept so older URLs don't 404
+  logo-mark.svg              the butterfly mark extracted from the official logo (hero art)
   lara.jpg                    portrait used in Quiénes somos (EXIF stripped)
   testimonial-adrian.jpg, testimonial-matias.jpg, testimonial-denise.jpg
   logo LP-final-02 1-8ff22ebb.svg   header, drawer and footer logo

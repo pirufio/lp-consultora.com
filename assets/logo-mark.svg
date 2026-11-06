@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="253" height="481" viewBox="5.4 18.6 25.3 48.1" fill="none">
+<title>LP Consultora</title>
+<path d="M18.8123 22.5587C17.353 22.2366 15.9008 21.8845 14.4557 21.4911C12.0346 20.8331 9.63706 20.0647 7.27724 19.1582L6.32011 18.79C6.32011 18.79 6.21402 18.7417 6.20695 18.7946L5.84154 21.6591C4.07109 35.5257 9.07834 47.4344 26.7687 47.2986L30.477 47.1721L30.5902 47.1675L30.378 37.2582C29.9937 29.8935 25.0855 23.9414 18.8123 22.5587Z" fill="url(#paint0_linear_146_103)"/>
+<path d="M11.4853 56.8329C11.2024 57.8844 10.896 58.9312 10.5589 59.9712C9.99307 61.7151 9.34713 63.4361 8.59274 65.1295L8.28627 65.8151C8.28627 65.8151 8.2792 65.8174 8.2627 65.8933L10.4669 66.2361C21.0048 67.8788 30.7482 64.0826 30.5407 51.578L30.4936 48.7642L30.4912 48.6814L22.9992 48.801C17.3672 48.8931 12.6994 52.3097 11.4853 56.8329Z" fill="url(#paint1_linear_146_103)"/>
+<defs>
+<linearGradient id="paint0_linear_146_103" x1="7.23555" y1="36.5737" x2="28.4023" y2="29.4006" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0097C1"/>
+<stop offset="0.1849" stop-color="#009EC6"/>
+<stop offset="0.4506" stop-color="#00B1D4"/>
+<stop offset="0.7636" stop-color="#00D0EA"/>
+<stop offset="1" stop-color="#00ECFF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_146_103" x1="21.871" y1="65.5432" x2="17.4029" y2="49.9183" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0097C1"/>
+<stop offset="0.1029" stop-color="#0A90BF"/>
+<stop offset="0.2764" stop-color="#247BBB"/>
+<stop offset="0.4994" stop-color="#4F5BB3"/>
+<stop offset="0.7601" stop-color="#8A2EA9"/>
+<stop offset="1" stop-color="#C6009F"/>
+</linearGradient>
+</defs>
+</svg>
