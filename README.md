@@ -37,11 +37,13 @@ assets/
   tailwind.css                compiled Tailwind (static)
   fonts/                      fonts.css + f0..f11.woff2 (Inter, Montserrat subsets)
   favicon.svg
-  og-image.jpg                1200x630 social share image
-  hero.jpg, map.png
+  og-image-v2.jpg             1200x630 social share image (current; the filename is versioned because
+                              WhatsApp/Facebook cache previews by URL — bump to -v3 when it changes)
+  og-image.jpg                same image, kept so the old URL doesn't 404
+  Mariposa superior-*.png, Mariposa inferior-*.png   the two wings of the logo mark (hero art)
+  lara.jpg                    portrait used in Quiénes somos (EXIF stripped)
   testimonial-adrian.jpg, testimonial-matias.jpg, testimonial-denise.jpg
-  logo LP-final-02 1-8ff22ebb.svg   header + drawer logo
-  Logo footer-85ce6ab7.svg          footer logo
+  logo LP-final-02 1-8ff22ebb.svg   header, drawer and footer logo
   clients/                    10 client logo PNGs
 ```
 
@@ -67,7 +69,11 @@ hosting). Antispam: honeypot field, minimum fill time, per-IP rate limit, Origin
 3. Upload `contact.php`, `lib/` and the updated `index.html` and `.htaccess`.
 4. Send a test message from the live site and check the inbox (and spam folder).
 
-Form copy lives in the `cf.*` keys of the `I18N` dictionary.
+Form fields: Nombre, Empresa (opcional), Correo electrónico, Teléfono (opcional), Servicio de interés
+(optional select), Mensaje, consent. The `service` values (`seleccion`, `psicotecnicas`, `mapeo`,
+`assessment`, `consultoria`, `talleres`, `otra`) are validated in `contact.php` (`$services`), so keep the
+`<select>` in `index.html` and that list in sync. The "Consultanos por este servicio" card links pre-select
+the matching option.
 
 ---
 
@@ -76,27 +82,40 @@ Form copy lives in the `cf.*` keys of the `I18N` dictionary.
 | Concern | Approach |
 | --- | --- |
 | **Markup** | Single `index.html`. Spanish is the raw default so no-JS visitors and crawlers get a valid page. |
-| **Styling** | Tailwind CSS **compiled to a static file** (`assets/tailwind.css`). A small custom `<style>` block in the `<head>` holds the brand gradient, blob shapes, and scrollbar-hiding helpers. |
+| **Styling** | Tailwind CSS **compiled to a static file** (`assets/tailwind.css`). All new sections are styled by a custom `<style>` block in the `<head>` (design tokens in `:root` use the official palette; component classes are prefixed `lp-`). Tailwind is now only used by the preserved Clientes/Testimonios modules and `<body>`, so no Tailwind rebuild is needed to edit the page. |
 | **Design system** | Material-3 color tokens + custom `spacing`, `fontFamily`, `fontSize`, and `maxWidth` scales, defined in `tailwind.config.js`. Containers cap at `max-w-container` (1280px). |
 | **Fonts** | Self-hosted **Inter** (400/600) and **Montserrat** (600/700) via `assets/fonts/fonts.css` (`@font-face` with `unicode-range` subsetting). |
-| **Icons** | **Inline SVG `<path>`** per icon (Material Symbols artwork), `fill="currentColor"`, sized via inline `width`/`height`. No icon font, no `<use>`/sprite. |
-| **i18n** | Dependency-free. `data-i18n` / `data-i18n-html` / `data-i18n-aria` attributes + a JS dictionary in the bottom `<script>`. Auto-detect order: `localStorage` → `navigator.language` → Spanish. |
-| **SEO** | `<title>`, meta description, canonical, Open Graph, Twitter card, geo tags, and JSON-LD `ProfessionalService`. Title/description/`<html lang>`/`og:locale` update on language switch. |
+| **Icons** | Inline SVG per icon (`currentColor`; service icons are simple 24px line icons). No icon font, no `<use>`/sprite. |
+| **i18n** | Dependency-free. Spanish is the raw HTML (what crawlers and no-JS visitors get). Elements carry `data-i18n` / `data-i18n-html` / `data-i18n-aria` / `data-i18n-alt` keys; the English strings live in the `EN` object in the bottom `<script>`, and the JS stores the original Spanish so switching back restores it exactly. Auto-detect order: `localStorage` → `navigator.language` → Spanish. |
+| **SEO** | `<title>`, meta description, canonical, Open Graph, Twitter card, geo tags, and JSON-LD `ProfessionalService`. JSON-LD (Spanish) only carries verifiable facts (no price range, ratings or figures). Title, description, `<html lang>` and `og:locale` update on language switch. |
 
 ### Internationalization
 
-- Switcher: an **ES / EN** toggle in the top bar and in the nav drawer (both stay in sync).
-- All user-visible strings live in the `I18N = { es: {…}, en: {…} }` dictionary near the end of
-  `index.html`. To edit copy, change both language entries for the relevant key.
+- Switcher: **ES / EN** in the header (≥1100px) and in the mobile drawer.
+- To edit copy: change the Spanish in the HTML and the matching key in `EN` (search the key shown in
+  the element's `data-i18n*` attribute). Meta tags use `EN_META`; form messages use `MSG.es` / `MSG.en`.
+- English copy was written by Claude at the owner's request (not by a professional translator); have a
+  native speaker skim it before promoting the English version.
 - **The three testimonials are translated to English for comprehension.** They are real quotes from
   real clients; the English versions are faithful translations, not the clients' literal words.
+
+### Content rules (from the renovation brief)
+
+- **Clientes and Testimonios are preserved verbatim** (logos, names, order, links; quotes, names, roles,
+  photos). Do not retouch or "fix" their text, including the quotes' spelling.
+- Track And Hire is only a link destination (CV / ofertas), never listed as a service.
+- Only the official logo files and the existing palette are used; no stock photos stand in for the team.
+  *Quiénes somos* shows the institutional text plus a founder block (real portrait `assets/lara.jpg`,
+  photo left / text right) with Lara Ponce's approved bio. Name and title also appear in the JSON-LD
+  `founder`. No stock images stand in for people.
+- The footer year is set by JS (`#year`; static fallback in the HTML).
 
 ### Outbound links (intentional external URLs)
 
 Not runtime dependencies — these are navigation targets:
 
-- **Cargá tu CV** → `https://hiringroom.com/jobs/get_vacancy/62d86434b9f90f34c1221820/candidates/new#step2`
-- **Ofertas laborales** → `https://lpconsultora.hiringroom.com/jobs`
+- **Cargá tu CV** → `https://lpconsultora.trackandhire.com/jobs/114/apply`
+- **Ofertas laborales** → `https://lpconsultora.trackandhire.com/`
 - WhatsApp `+54 351 241-1979`, `lara@lp-consultora.com`, and LinkedIn / Instagram / Facebook.
 
 ---

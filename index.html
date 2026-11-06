@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="es">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary SEO -->
-    <title>Selección de Personal y Consultoría en RRHH | LP Consultora</title>
+    <title>LP Consultora | Selección de personal y desarrollo organizacional en Córdoba</title>
     <meta
       name="description"
-      content="Consultora de Recursos Humanos en Córdoba, Argentina. Especialistas en selección de personal, consultoría en RRHH y evaluaciones psicotécnicas para empresas nacionales e internacionales."
+      content="Acompañamos a empresas en selección de personal, evaluaciones psicotécnicas, desarrollo de talento y consultoría organizacional. Conocé LP Consultora."
     />
     <meta
       name="keywords"
-      content="selección de personal, consultora RRHH, recursos humanos Córdoba, evaluaciones psicotécnicas, reclutamiento, búsqueda de talento, consultoría organizacional, LP Consultora"
+      content="selección de personal, reclutamiento, evaluaciones psicotécnicas, mapeo de talentos, assessment center, consultoría organizacional, talleres para equipos, Córdoba, LP Consultora"
     />
     <meta name="author" content="LP Consultora" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -30,28 +30,29 @@
     <meta property="og:url" content="https://lp-consultora.com/" />
     <meta
       property="og:title"
-      content="Selección de Personal y Consultoría en RRHH | LP Consultora"
+      content="LP Consultora | Selección de personal y desarrollo organizacional en Córdoba"
     />
     <meta
       property="og:description"
-      content="Especialistas en la selección y gestión de talento humano. Conectamos el mejor talento con las empresas líderes."
+      content="Acompañamos a empresas en selección de personal, evaluaciones psicotécnicas, desarrollo de talento y consultoría organizacional. Conocé LP Consultora."
     />
-    <meta property="og:image" content="https://lp-consultora.com/assets/og-image.jpg" />
+    <meta property="og:image" content="https://lp-consultora.com/assets/og-image-v2.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="LP Consultora — Talento Humano" />
+    <meta property="og:image:alt" content="LP Consultora — Personas que impulsan organizaciones." />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Selección de Personal y Consultoría en RRHH | LP Consultora"
+      content="LP Consultora | Selección de personal y desarrollo organizacional en Córdoba"
     />
     <meta
       name="twitter:description"
-      content="Especialistas en la selección y gestión de talento humano en Córdoba, Argentina."
+      content="Acompañamos a empresas en selección de personal, evaluaciones psicotécnicas, desarrollo de talento y consultoría organizacional."
     />
-    <meta name="twitter:image" content="https://lp-consultora.com/assets/og-image.jpg" />
+    <meta name="twitter:image" content="https://lp-consultora.com/assets/og-image-v2.jpg" />
+    <meta name="twitter:image:alt" content="LP Consultora — Personas que impulsan organizaciones." />
 
     <!-- Theme -->
     <meta name="theme-color" content="#5700d4" />
@@ -60,34 +61,37 @@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="apple-touch-icon" href="/assets/logo%20LP-final-02%201-8ff22ebb.svg" />
 
-    <!-- Structured data: local professional service -->
+    <!-- Structured data (only verifiable facts: no prices, ratings, certifications or figures) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "LP Consultora",
-        "description": "Consultora de Recursos Humanos especialista en selección de personal, consultoría en RRHH y evaluaciones psicotécnicas.",
+        "slogan": "Personas que impulsan organizaciones.",
+        "description": "Acompañamos a empresas en la selección, evaluación y desarrollo de talento, el fortalecimiento de sus equipos y la mejora de sus estructuras y procesos de trabajo.",
         "url": "https://lp-consultora.com/",
-        "logo": "https://lp-consultora.com/assets/favicon.svg",
-        "image": "https://lp-consultora.com/assets/og-image.jpg",
+        "logo": "https://lp-consultora.com/assets/logo%20LP-final-02%201-8ff22ebb.svg",
+        "image": "https://lp-consultora.com/assets/og-image-v2.jpg",
+        "founder": {
+          "@type": "Person",
+          "name": "Lara Ponce",
+          "jobTitle": "Fundadora y Directora"
+        },
         "email": "lara@lp-consultora.com",
         "telephone": "+543512411979",
-        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Córdoba",
           "addressRegion": "Córdoba",
           "addressCountry": "AR"
         },
-        "areaServed": [
-          { "@type": "Country", "name": "Argentina" },
-          { "@type": "Place", "name": "Internacional" }
-        ],
         "knowsAbout": [
-          "Selección de personal",
-          "Consultoría en Recursos Humanos",
+          "Reclutamiento y selección de personal",
           "Evaluaciones psicotécnicas",
-          "Diagnóstico organizacional"
+          "Mapeo de talentos y potencial",
+          "Assessment Center",
+          "Consultoría organizacional",
+          "Talleres y desarrollo de equipos"
         ],
         "sameAs": [
           "https://www.linkedin.com/company/lp-consultora/",
@@ -96,43 +100,896 @@
         ]
       }
     </script>
-    <!-- Self-hosted fonts (Inter, Montserrat, Material Symbols) -->
+
+    <!-- Self-hosted fonts (Inter, Montserrat) -->
     <link rel="stylesheet" href="/assets/fonts/fonts.css" />
-    <!-- Compiled Tailwind (static, replaces the runtime CDN) -->
+    <!-- Compiled Tailwind (static). Only the preserved Clientes/Testimonios modules and <body> use it. -->
     <link rel="stylesheet" href="/assets/tailwind.css" />
     <style>
-      .brand-gradient {
-        background: linear-gradient(135deg, #006782 0%, #5700d4 100%);
+      /* ============================================================
+         LP Consultora — design tokens (official palette, unchanged)
+         ============================================================ */
+      :root {
+        --primary: #5700d4;
+        --primary-container: #702cf8;
+        --secondary: #006782;
+        --ink: #191c20;
+        --ink-2: #494456;
+        --bg: #f8f9ff;
+        --bg-2: #f2f3f9;
+        --card: #ffffff;
+        --line: #e1e2e8;
+        --line-2: #cbc3d9;
+        --tint-primary: #e8ddff;
+        --tint-secondary: #bbe9ff;
+        --on-tint-secondary: #005870;
+        --grad: linear-gradient(135deg, #006782 0%, #5700d4 100%);
+        --header-h: 4.25rem;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
       }
+
+      html {
+        scroll-padding-top: var(--header-h);
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        html {
+          scroll-behavior: smooth;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--ink);
+      }
+      @media (min-width: 768px) {
+        body {
+          font-size: 1.0625rem;
+        }
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--primary);
+        outline-offset: 3px;
+        border-radius: 0.375rem;
+      }
+
+      .lp-sr {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .lp-skip {
+        position: fixed;
+        top: 0.5rem;
+        left: 0.5rem;
+        z-index: 100;
+        background: var(--ink);
+        color: #fff;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.75rem;
+        font-weight: 600;
+        text-decoration: none;
+        transform: translateY(-200%);
+      }
+      .lp-skip:focus {
+        transform: none;
+      }
+
       .brand-gradient-text {
-        background: linear-gradient(135deg, #006782 0%, #5700d4 100%);
+        background: var(--grad);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }
-      .blob-shape-1 {
-        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      .hide-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
       }
-      .blob-shape-2 {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* ---------- Layout primitives ---------- */
+      .lp-container {
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      .lp-section {
+        padding: 4rem 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .lp-section {
+          padding: 6rem 1.5rem;
+        }
+      }
+      .lp-section--alt {
+        background: var(--bg-2);
+      }
+      .lp-section--white {
+        background: var(--card);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .lp-head {
+        max-width: 48rem;
+        margin: 0 auto 3rem;
+        text-align: center;
+      }
+      .lp-eyebrow {
+        display: block;
+        margin: 0 0 1rem;
+        color: var(--secondary);
+        font-size: 0.8125rem;
+        line-height: 1.5;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+      }
+      .lp-h2 {
+        font-family: "Montserrat", "Inter", sans-serif;
+        font-size: clamp(1.625rem, 3.2vw, 2.375rem);
+        line-height: 1.25;
+        font-weight: 700;
+        color: var(--ink);
+        margin: 0;
+      }
+      .lp-h2::after {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 4px;
+        border-radius: 9999px;
+        background: var(--grad);
+        margin: 1rem auto 0;
+      }
+      .lp-h2--left::after {
+        margin-left: 0;
+      }
+      .lp-lead {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--ink-2);
+        margin: 1.25rem 0 0;
+      }
+      .lp-center-cta {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+
+      /* ---------- Buttons ---------- */
+      .lp-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        min-height: 3rem;
+        padding: 0.75rem 1.75rem;
+        border-radius: 9999px;
+        border: 2px solid transparent;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        line-height: 1.25;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+      }
+      .lp-btn--primary {
+        background: var(--grad);
+        color: #fff;
+        box-shadow: 0 8px 24px rgba(87, 0, 212, 0.22);
+      }
+      .lp-btn--primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(87, 0, 212, 0.3);
+      }
+      .lp-btn--secondary {
+        background: var(--card);
+        color: var(--primary);
+        border-color: var(--primary);
+      }
+      .lp-btn--secondary:hover {
+        background: var(--tint-primary);
+      }
+      .lp-btn svg {
+        flex-shrink: 0;
+      }
+      .lp-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .lp-actions .lp-btn {
+        flex: 1 1 14rem;
+      }
+      @media (min-width: 640px) {
+        .lp-actions .lp-btn {
+          flex: 0 0 auto;
+        }
+      }
+
+      /* ---------- Header / navigation ---------- */
+      .lp-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        background: rgba(248, 249, 255, 0.88);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(225, 226, 232, 0.8);
+      }
+      .lp-header-inner {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        max-width: 1280px;
+        height: var(--header-h);
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+      .lp-logo {
+        display: block;
+        flex-shrink: 0;
+      }
+      .lp-logo img {
+        display: block;
+        height: 2rem;
+        width: auto;
+      }
+      .lp-nav {
+        display: none;
+        align-items: center;
+        gap: 0.125rem;
+        margin-left: auto;
+      }
+      .lp-nav a,
+      .lp-drawer-nav a {
+        color: var(--ink-2);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .lp-nav a {
+        padding: 0.5rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.9375rem;
+        white-space: nowrap;
+      }
+      .lp-nav a:hover {
+        background: var(--bg-2);
+        color: var(--primary);
+      }
+      .lp-nav a.lp-nav-cta,
+      .lp-nav a.lp-nav-cta:hover {
+        margin-left: 0.5rem;
+        padding: 0.625rem 1.25rem;
+        background: var(--grad);
+        color: #fff;
+      }
+      .lp-header-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-left: auto;
+      }
+      .lp-header-actions .lp-btn {
+        min-height: 2.75rem;
+        padding: 0.5rem 1.125rem;
+        font-size: 0.9375rem;
+      }
+      .lp-menu-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        border: 0;
+        border-radius: 9999px;
+        background: transparent;
+        color: var(--primary);
+        cursor: pointer;
+      }
+      .lp-menu-btn:hover {
+        background: var(--bg-2);
+      }
+      @media (min-width: 1100px) {
+        .lp-nav {
+          display: flex;
+        }
+        .lp-header-actions {
+          display: none;
+        }
+      }
+
+      /* Mobile drawer */
+      .lp-drawer {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        background: rgba(25, 28, 32, 0.4);
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      .lp-drawer[hidden] {
+        display: none;
+      }
+      .lp-drawer.is-open {
+        opacity: 1;
+      }
+      .lp-drawer-panel {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        width: min(20rem, 88vw);
+        padding: 1rem 1rem 1.5rem;
+        background: var(--bg);
+        border-radius: 1.5rem 0 0 1.5rem;
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+        transform: translateX(100%);
+        transition: transform 0.25s;
+        overflow-y: auto;
+      }
+      .lp-drawer.is-open .lp-drawer-panel {
+        transform: none;
+      }
+      .lp-drawer-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+      .lp-drawer-top img {
+        height: 1.75rem;
+        width: auto;
+      }
+      .lp-drawer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      .lp-drawer-nav a {
+        display: block;
+        padding: 0.875rem 1rem;
+        border-radius: 1rem;
+        font-size: 1.0625rem;
+      }
+      .lp-drawer-nav a:hover {
+        background: var(--tint-primary);
+        color: var(--primary);
+      }
+      .lp-drawer .lp-btn {
+        margin-top: 1.5rem;
+      }
+
+      /* Language switcher */
+      .lp-lang {
+        display: inline-flex;
+        border: 1px solid var(--line-2);
+        border-radius: 9999px;
+        overflow: hidden;
+        background: var(--card);
+      }
+      .lp-lang button {
+        min-width: 2.75rem;
+        min-height: 2.5rem;
+        border: 0;
+        background: transparent;
+        color: var(--ink-2);
+        font: 600 0.875rem/1 "Inter", sans-serif;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+      }
+      .lp-lang button:hover {
+        background: var(--tint-primary);
+      }
+      .lp-lang button[aria-pressed="true"] {
+        background: var(--grad);
+        color: #fff;
+      }
+      .lp-lang--header {
+        display: none;
+        margin-left: 0.75rem;
+      }
+      .lp-drawer .lp-lang {
+        align-self: flex-start;
+        margin-top: 1.25rem;
+      }
+      @media (min-width: 1100px) {
+        .lp-lang--header {
+          display: inline-flex;
+        }
+      }
+
+      /* ---------- Hero ---------- */
+      .lp-hero {
+        position: relative;
+        overflow: hidden;
+        padding: calc(var(--header-h) + 2.5rem) 1.5rem 4rem;
+        background: radial-gradient(60rem 30rem at 85% 10%, rgba(232, 221, 255, 0.7), transparent 60%),
+          radial-gradient(40rem 26rem at 0% 100%, rgba(187, 233, 255, 0.5), transparent 60%), var(--bg);
+      }
+      .lp-hero-grid {
+        display: grid;
+        gap: 2.5rem;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      @media (min-width: 900px) {
+        .lp-hero {
+          padding-top: calc(var(--header-h) + 4rem);
+          padding-bottom: 6rem;
+        }
+        .lp-hero-grid {
+          grid-template-columns: 1.15fr 0.85fr;
+          gap: 3rem;
+        }
+      }
+      .lp-hero h1 {
+        font-family: "Montserrat", "Inter", sans-serif;
+        font-size: clamp(2.25rem, 5.4vw, 4rem);
+        line-height: 1.12;
+        font-weight: 700;
+        margin: 0;
+        color: var(--ink);
+      }
+      .lp-hero .lp-eyebrow {
+        margin-bottom: 1.25rem;
+      }
+      .lp-hero-lead {
+        margin: 1.5rem 0 0;
+        max-width: 38rem;
+        font-size: 1.1875rem;
+        line-height: 1.6;
+        color: var(--ink);
+      }
+      .lp-hero-support {
+        margin: 1rem 0 0;
+        max-width: 38rem;
+        color: var(--ink-2);
+      }
+      .lp-hero .lp-actions {
+        margin-top: 2rem;
+      }
+      .lp-hero-art {
+        position: relative;
+        width: 100%;
+        max-width: 28rem;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+      }
+      .lp-hero-art .blob {
+        position: absolute;
+        border-radius: 9999px;
+        filter: blur(48px);
+      }
+      .lp-hero-art .blob--a {
+        top: 4%;
+        right: 2%;
+        width: 55%;
+        height: 55%;
+        background: var(--tint-primary);
+      }
+      .lp-hero-art .blob--b {
+        bottom: 4%;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background: var(--tint-secondary);
+        opacity: 0.7;
+      }
+      .lp-hero-art img {
+        position: absolute;
+        display: block;
+        height: auto;
+      }
+      .lp-hero-art .wing-top {
+        left: 7%;
+        top: 10%;
+        width: 44%;
+      }
+      .lp-hero-art .wing-bottom {
+        left: 50%;
+        top: 25%;
+        width: 44%;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .lp-hero-art .wing-top {
+          animation: lp-float 9s ease-in-out infinite;
+        }
+        .lp-hero-art .wing-bottom {
+          animation: lp-float 11s ease-in-out infinite reverse;
+        }
+      }
+      @keyframes lp-float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* ---------- Cards & grids ---------- */
+      .lp-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1.5rem;
+        padding: 1.75rem;
+        box-shadow: var(--shadow);
+      }
+      .lp-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 640px) {
+        .lp-grid--2,
+        .lp-grid--3,
+        .lp-grid--4,
+        .lp-grid--5 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .lp-grid--5 > :last-child {
+          grid-column: 1 / -1;
+          max-width: calc(50% - 0.75rem);
+          justify-self: center;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lp-grid--3 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .lp-grid--4 {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        /* 5 cards: 3 + 2 centered */
+        .lp-grid--5 {
+          grid-template-columns: repeat(6, 1fr);
+        }
+        .lp-grid--5 > * {
+          grid-column: span 2;
+        }
+        .lp-grid--5 > :nth-child(4) {
+          grid-column: 2 / span 2;
+        }
+        .lp-grid--5 > :last-child {
+          grid-column: 4 / span 2;
+          max-width: none;
+          justify-self: stretch;
+        }
+      }
+
+      .lp-card h3 {
+        font-family: "Montserrat", "Inter", sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.35;
+        font-weight: 700;
+        margin: 0;
+        color: var(--ink);
+      }
+      .lp-card p {
+        margin: 0;
+        color: var(--ink-2);
+      }
+
+      /* Needs ("¿En qué podemos ayudarte?") */
+      .lp-need {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        border-top: 4px solid var(--primary);
+      }
+      .lp-need:nth-child(even) {
+        border-top-color: var(--secondary);
+      }
+      .lp-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        min-height: 2.75rem;
+        margin-top: auto;
+        color: var(--primary);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .lp-link:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      /* Services */
+      .lp-service {
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+        scroll-margin-top: calc(var(--header-h) + 1rem);
+      }
+      .lp-icon {
+        display: grid;
+        place-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 1rem;
+        background: var(--tint-primary);
+        color: var(--primary);
+      }
+      .lp-service:nth-child(even) .lp-icon {
+        background: var(--tint-secondary);
+        color: var(--on-tint-secondary);
+      }
+      .lp-tagline {
+        color: var(--secondary) !important;
+        font-weight: 600;
+      }
+
+      /* About */
+      .lp-about {
+        max-width: 52rem;
+      }
+      .lp-prose p {
+        margin: 0 0 1.25rem;
+        color: var(--ink-2);
+        max-width: 44rem;
+      }
+      .lp-prose p:last-child {
+        margin-bottom: 0;
+      }
+      .lp-prose p:first-of-type {
+        color: var(--ink);
+        font-size: 1.1875rem;
+      }
+      .lp-founder {
+        display: grid;
+        gap: 2.5rem;
+        align-items: center;
+        margin-top: 3.5rem;
+        padding: 2rem 1.5rem;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 2rem;
+        box-shadow: var(--shadow);
+      }
+      @media (min-width: 900px) {
+        .lp-founder {
+          grid-template-columns: 0.8fr 1.2fr;
+          gap: 4rem;
+          padding: 3rem;
+        }
+      }
+      .lp-founder-text h3 {
+        margin: 0;
+        font-family: "Montserrat", "Inter", sans-serif;
+        font-size: clamp(1.5rem, 2.8vw, 2rem);
+        line-height: 1.25;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .lp-founder-text p {
+        margin: 0 0 1.125rem;
+        color: var(--ink-2);
+        max-width: 42rem;
+      }
+      .lp-founder-text p.lp-founder-role {
+        margin: 0.25rem 0 1.5rem;
+        color: var(--secondary);
+        font-weight: 600;
+        font-size: 1.125rem;
+      }
+      .lp-founder-text p:last-child {
+        margin-bottom: 0;
+      }
+      .lp-about-photo {
+        position: relative;
+        width: 100%;
+        max-width: 22rem;
+        margin: 0 auto;
+        isolation: isolate;
+      }
+      .lp-about-photo::before {
+        content: "";
+        position: absolute;
+        inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+        z-index: -1;
+        border-radius: 2rem;
+        background: linear-gradient(160deg, var(--tint-primary), var(--tint-secondary));
+      }
+      .lp-about-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 2rem;
+        box-shadow: var(--shadow);
+        background: var(--bg-2);
+      }
+
+      /* Mission / vision / values */
+      .lp-mv {
+        display: grid;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+      }
+      @media (min-width: 768px) {
+        .lp-mv {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .lp-mv-card {
+        border-radius: 1.5rem;
+        padding: 2rem;
+      }
+      .lp-mv-card h2 {
+        font-family: "Montserrat", "Inter", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        font-weight: 700;
+        margin: 0 0 1rem;
+      }
+      .lp-mv-card p {
+        margin: 0 0 1rem;
+      }
+      .lp-mv-card p:last-child {
+        margin-bottom: 0;
+      }
+      .lp-mv-card--mission {
+        background: var(--grad);
+        color: #fff;
+        font-size: 1.125rem;
+      }
+      .lp-mv-card--mission h2 {
+        color: #fff;
+      }
+      .lp-mv-card--vision {
+        background: var(--card);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        color: var(--ink-2);
+      }
+      .lp-mv-card--vision h2 {
+        color: var(--ink);
+      }
+      .lp-values-title {
+        font-family: "Montserrat", "Inter", sans-serif;
+        font-size: clamp(1.5rem, 2.8vw, 2rem);
+        line-height: 1.25;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 2rem;
+      }
+      .lp-value {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        padding: 1.5rem;
+      }
+      .lp-value::before {
+        content: "";
+        width: 2.5rem;
+        height: 4px;
+        border-radius: 9999px;
+        background: var(--grad);
+      }
+      .lp-value h3 {
+        font-size: 1.125rem;
+      }
+
+      /* Steps */
+      .lp-step {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .lp-step h3 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .lp-step-n {
+        display: grid;
+        place-items: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 9999px;
+        background: var(--grad);
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
+
+      /* Jobs */
+      .lp-jobs {
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem;
+        border-radius: 2rem;
+        background: var(--card);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+      .lp-jobs .lp-actions {
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      /* ---------- Contact ---------- */
+      .lp-contact-grid {
+        display: grid;
+        gap: 2.5rem;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      @media (min-width: 960px) {
+        .lp-contact-grid {
+          grid-template-columns: 0.9fr 1.1fr;
+          gap: 4rem;
+          align-items: start;
+        }
+      }
+      .lp-contact-info .lp-actions {
+        margin-top: 2rem;
+      }
+      .lp-details {
+        display: grid;
+        gap: 0.875rem;
+        margin: 2.5rem 0 0;
+        padding: 0;
+        list-style: none;
+        color: var(--ink-2);
+      }
+      .lp-details li {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.5rem;
+      }
+      .lp-details strong {
+        min-width: 6.5rem;
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .lp-details a {
+        color: var(--primary);
+        font-weight: 600;
+        text-underline-offset: 3px;
       }
       /* Contact form */
       .cf {
         width: 100%;
-        max-width: 40rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         text-align: left;
         background: #fff;
-        border: 1px solid #e6e8ed;
+        border: 1px solid var(--line);
         border-radius: 1.5rem;
         padding: 1.5rem;
-        box-shadow: 0 1px 3px rgba(25, 28, 32, 0.06);
-      }
-      .cf-intro {
-        color: #494456;
-        text-align: center;
+        box-shadow: var(--shadow);
       }
       .cf-row {
         display: grid;
@@ -153,9 +1010,9 @@
         gap: 0.375rem;
       }
       .cf-field label {
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: 600;
-        color: #191c20;
+        color: var(--ink);
       }
       .cf input[type="text"],
       .cf input[type="email"],
@@ -163,24 +1020,25 @@
       .cf select,
       .cf textarea {
         width: 100%;
+        min-height: 3rem;
         font: inherit;
-        color: #191c20;
-        background: #f2f3f9;
-        border: 1px solid #cbc3d9;
+        color: var(--ink);
+        background: var(--bg-2);
+        border: 1px solid var(--line-2);
         border-radius: 0.75rem;
         padding: 0.75rem 1rem;
       }
       .cf textarea {
         resize: vertical;
-        min-height: 7rem;
+        min-height: 8rem;
       }
       .cf input:focus-visible,
       .cf select:focus-visible,
       .cf textarea:focus-visible,
       .cf-consent input:focus-visible {
-        outline: 2px solid #5700d4;
+        outline: 3px solid var(--primary);
         outline-offset: 2px;
-        border-color: #5700d4;
+        border-color: var(--primary);
       }
       .cf-hp {
         position: absolute;
@@ -191,24 +1049,25 @@
       }
       .cf-consent {
         display: flex;
-        gap: 0.625rem;
+        gap: 0.75rem;
         align-items: flex-start;
-        font-size: 14px;
-        color: #494456;
+        font-size: 1rem;
+        color: var(--ink-2);
         cursor: pointer;
       }
       .cf-consent input {
-        margin-top: 0.2rem;
-        width: 1.1rem;
-        height: 1.1rem;
-        accent-color: #5700d4;
+        margin-top: 0.25rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        accent-color: var(--primary);
         flex-shrink: 0;
       }
       .cf-submit {
+        min-height: 3rem;
         font: inherit;
         font-weight: 600;
         color: #fff;
-        background: linear-gradient(135deg, #006782 0%, #5700d4 100%);
+        background: var(--grad);
         border: 0;
         border-radius: 9999px;
         padding: 0.875rem 1.5rem;
@@ -218,18 +1077,15 @@
       .cf-submit:hover {
         opacity: 0.92;
       }
-      .cf-submit:focus-visible {
-        outline: 2px solid #5700d4;
-        outline-offset: 3px;
-      }
       .cf-submit:disabled {
         opacity: 0.6;
         cursor: wait;
       }
       .cf-status {
         min-height: 1.5rem;
+        margin: 0;
         text-align: center;
-        font-size: 14px;
+        font-size: 1rem;
       }
       .cf-status--ok {
         color: #0b6b3a;
@@ -237,574 +1093,560 @@
       .cf-status--error {
         color: #ba1a1a;
       }
-      .hide-scrollbar {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
+
+      /* ---------- Footer ---------- */
+      .lp-footer {
+        background: var(--card);
+        border-top: 1px solid var(--line);
+        border-radius: 1.5rem 1.5rem 0 0;
+        padding: 3rem 1.5rem 5.5rem;
+        text-align: center;
+        color: var(--ink-2);
       }
-      .hide-scrollbar::-webkit-scrollbar {
+      .lp-footer-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      .lp-footer img {
+        height: 2.75rem;
+        width: auto;
+      }
+      .lp-footer p {
+        margin: 0;
+      }
+      .lp-footer-slogan {
+        font-family: "Montserrat", "Inter", sans-serif;
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .lp-footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem 1.5rem;
+      }
+      .lp-footer-links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.75rem;
+        color: var(--ink-2);
+        text-underline-offset: 3px;
+      }
+      .lp-footer-links a:hover {
+        color: var(--primary);
+      }
+      .lp-footer hr {
+        width: 100%;
+        border: 0;
+        border-top: 1px solid var(--line);
+        margin: 0.5rem 0 0;
+      }
+      .lp-footer small {
+        font-size: 0.9375rem;
+      }
+
+      /* Floating WhatsApp (persistent, small, hides over the contact section) */
+      .lp-wa {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 40;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        min-height: 3.25rem;
+        min-width: 3.25rem;
+        justify-content: center;
+        padding: 0 1rem;
+        border-radius: 9999px;
+        background: var(--grad);
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.9375rem;
+        text-decoration: none;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        transition: opacity 0.25s, transform 0.25s;
+      }
+      .lp-wa .lp-wa-label {
         display: none;
+      }
+      @media (min-width: 768px) {
+        .lp-wa .lp-wa-label {
+          display: inline;
+        }
+        .lp-footer {
+          padding-bottom: 4rem;
+        }
+      }
+      .lp-wa.is-hidden {
+        opacity: 0;
+        transform: translateY(1rem);
+        pointer-events: none;
       }
     </style>
   </head>
   <body
     class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container"
   >
-    <!-- Navigation Drawer (hidden by default, shown via JS) -->
-    <div
-      class="fixed inset-0 z-[60] bg-on-surface/40 backdrop-blur-sm hidden transition-opacity duration-200"
-      id="navigationDrawer"
-    >
-      <div
-        class="bg-surface dark:bg-surface-dim h-full w-[280px] rounded-r-xl shadow-2xl flex flex-col py-6 transform -translate-x-full transition-transform duration-300"
+    <a data-i18n="ui.1" class="lp-skip" href="#contenido">Saltar al contenido</a>
+
+    <!-- Mobile navigation drawer -->
+    <div class="lp-drawer" id="navigationDrawer" hidden>
+      <div data-i18n-aria="aria.1"
+        class="lp-drawer-panel"
         id="drawerContent"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menú principal"
       >
-        <div class="flex items-center gap-4 px-6 mb-8">
-          <div
-            class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center overflow-hidden p-1.5"
-          >
-            <img
-              class="w-full h-full object-contain"
-              alt=""
-              src="/assets/logo%20LP-final-02%201-8ff22ebb.svg"
-            />
-          </div>
-          <div>
-            <h2 class="font-headline-sm text-headline-sm text-primary">LP Consultora</h2>
-            <p
-              class="text-on-surface-variant font-label-caps text-label-caps mt-1"
-              data-i18n="drawer.sub"
-            >
-              Talento Humano
-            </p>
-          </div>
-          <button
-            class="ml-auto text-on-surface-variant p-2 rounded-full hover:bg-surface-container-high transition-colors"
-            id="closeDrawerBtn"
-            aria-label="Cerrar menú"
-            data-i18n-aria="aria.closeMenu"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <div class="lp-drawer-top">
+          <img src="/assets/logo%20LP-final-02%201-8ff22ebb.svg" alt="LP Consultora" />
+          <button data-i18n-aria="aria.2" class="lp-menu-btn" id="closeDrawerBtn" type="button" aria-label="Cerrar menú">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
           </button>
         </div>
-        <nav class="flex-1 overflow-y-auto font-body-md text-body-md">
-          <a
-            class="flex items-center gap-4 bg-secondary-container dark:bg-secondary-container text-on-secondary-container font-semibold rounded-full mx-2 px-4 py-3 mb-2"
-            href="#"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
-            <span data-i18n="nav.home">Inicio</span>
-          </a>
-          <a
-            class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full mx-2 px-4 py-3 mb-2"
-            href="#quienes-somos"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/></svg>
-            <span data-i18n="nav.about">Nosotros</span>
-          </a>
-          <a
-            class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full mx-2 px-4 py-3 mb-2"
-            href="#sumate"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M500-482q29-32 44.5-73t15.5-85q0-44-15.5-85T500-798q60 8 100 53t40 105q0 60-40 105t-100 53Zm220 322v-120q0-36-16-68.5T662-406q51 18 94.5 46.5T800-280v120h-80Zm80-280v-80h-80v-80h80v-80h80v80h80v80h-80v80h-80Zm-593-87q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM0-160v-112q0-34 17.5-62.5T64-378q62-31 126-46.5T320-440q66 0 130 15.5T576-378q29 15 46.5 43.5T640-272v112H0Zm320-400q33 0 56.5-23.5T400-640q0-33-23.5-56.5T320-720q-33 0-56.5 23.5T240-640q0 33 23.5 56.5T320-560ZM80-240h480v-32q0-11-5.5-20T540-306q-54-27-109-40.5T320-360q-56 0-111 13.5T100-306q-9 5-14.5 14T80-272v32Zm240-400Zm0 400Z"/></svg>
-            <span data-i18n="nav.join">Sumate</span>
-          </a>
-          <a
-            class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full mx-2 px-4 py-3 mb-2"
-            href="#servicios"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m741-600-44-96-96-44 96-44 44-96 44 96 96 44-96 44-44 96Zm80 280-32-68-68-32 68-32 32-68 32 68 68 32-68 32-32 68ZM301-80l-12-94q-7-3-15-8t-13-10l-88 38-99-174 75-56v-32l-75-56 99-174 88 38q5-5 13-10t15-8l12-94h200l12 94q7 3 15 8t13 10l88-38 99 174-75 56v32l75 56-99 174-88-38q-5 5-13 10t-15 8l-12 94H301Zm185-235q35-35 35-85t-35-85q-35-35-85-35t-85 35q-35 35-35 85t35 85q35 35 85 35t85-35ZM371-160h60l8-72q29-8 49.5-20.5T529-286l66 30 28-50-58-44q8-23 8-50t-8-50l58-44-28-50-66 30q-20-21-40.5-33.5T439-568l-8-72h-60l-8 72q-29 8-49.5 20.5T273-514l-66-30-28 50 58 44q-8 23-8.5 50t8.5 50l-58 44 28 50 66-30q20 21 40.5 33.5T363-232l8 72Zm30-240Z"/></svg>
-            <span data-i18n="nav.services">Servicios</span>
-          </a>
-          <a
-            class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full mx-2 px-4 py-3 mb-2"
-            href="#testimonios"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM362.5-517.5Q380-535 380-560t-17.5-42.5Q345-620 320-620t-42.5 17.5Q260-585 260-560t17.5 42.5Q295-500 320-500t42.5-17.5Zm360 0Q740-535 740-560t-17.5-42.5Q705-620 680-620t-42.5 17.5Q620-585 620-560t17.5 42.5Q655-500 680-500t42.5-17.5ZM680-560Zm-360 0Z"/></svg>
-            <span data-i18n="nav.testimonials">Testimonios</span>
-          </a>
-          <a
-            class="flex items-center gap-4 text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors rounded-full mx-2 px-4 py-3"
-            href="#contacto"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-            <span data-i18n="nav.contact">Contacto</span>
-          </a>
+        <nav data-i18n-aria="aria.3" class="lp-drawer-nav" aria-label="Principal (móvil)">
+          <a data-i18n="ui.2" href="#inicio">Inicio</a>
+          <a data-i18n="ui.3" href="#quienes-somos">Quiénes somos</a>
+          <a data-i18n="ui.4" href="#servicios">Servicios</a>
+          <a data-i18n="ui.5" href="#clientes">Clientes</a>
+          <a data-i18n="ui.6" href="#testimonios">Testimonios</a>
+          <a data-i18n="ui.7" href="#oportunidades">Oportunidades laborales</a>
+          <a data-i18n="ui.8" href="#contacto">Contacto</a>
         </nav>
-        <!-- Language switcher (drawer) -->
-        <div class="px-6 pt-4 mt-2 border-t border-surface-variant">
-          <div
-            class="inline-flex items-center rounded-full border border-surface-variant overflow-hidden font-label-caps text-label-caps"
-            role="group"
-            aria-label="Idioma / Language"
-          >
-            <button type="button" data-lang-btn="es" class="px-4 py-2 transition-colors">ES</button>
-            <button type="button" data-lang-btn="en" class="px-4 py-2 transition-colors">EN</button>
-          </div>
+        <a data-i18n="ui.9" class="lp-btn lp-btn--primary" href="#contacto">Hablemos de tu empresa</a>
+        <div class="lp-lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
         </div>
       </div>
     </div>
 
-    <!-- Top App Bar -->
-    <header
-      class="bg-surface/70 dark:bg-surface-dim/70 fixed top-0 w-full z-50 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.04)]"
-    >
-      <div class="flex items-center justify-between px-6 h-16 w-full max-w-container mx-auto">
-        <button
-          class="text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity scale-95 active:transition-transform p-2 -ml-2 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/50"
-          id="menuBtn"
-          aria-label="Abrir menú"
-          data-i18n-aria="aria.openMenu"
-        >
-          <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <a href="#" class="h-8 w-auto mx-auto absolute left-1/2 -translate-x-1/2">
-          <img
+    <!-- Header -->
+    <header class="lp-header">
+      <div class="lp-header-inner">
+        <a href="#inicio" class="lp-logo">
+          <img data-i18n-alt="aria.4"
             src="/assets/logo%20LP-final-02%201-8ff22ebb.svg"
-            alt="LP Consultora"
-            class="h-full w-auto object-contain"
+            alt="LP Consultora — Personas que impulsan organizaciones."
           />
         </a>
-        <!-- Language switcher (header) -->
-        <div
-          class="inline-flex items-center rounded-full border border-surface-variant overflow-hidden font-label-caps text-label-caps -mr-1"
-          role="group"
-          aria-label="Idioma / Language"
-        >
-          <button type="button" data-lang-btn="es" class="px-3 py-1.5 transition-colors">ES</button>
-          <button type="button" data-lang-btn="en" class="px-3 py-1.5 transition-colors">EN</button>
+        <nav data-i18n-aria="aria.5" class="lp-nav" aria-label="Principal">
+          <a data-i18n="ui.2" href="#inicio">Inicio</a>
+          <a data-i18n="ui.3" href="#quienes-somos">Quiénes somos</a>
+          <a data-i18n="ui.4" href="#servicios">Servicios</a>
+          <a data-i18n="ui.5" href="#clientes">Clientes</a>
+          <a data-i18n="ui.6" href="#testimonios">Testimonios</a>
+          <a data-i18n="ui.7" href="#oportunidades">Oportunidades laborales</a>
+          <a data-i18n="ui.8" href="#contacto" class="lp-nav-cta">Contacto</a>
+        </nav>
+        <div class="lp-lang lp-lang--header" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+        </div>
+        <div class="lp-header-actions">
+          <a data-i18n="ui.8" class="lp-btn lp-btn--primary" href="#contacto">Contacto</a>
+          <button data-i18n-aria="aria.6"
+            class="lp-menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="navigationDrawer"
+          >
+            <svg width="24" height="24" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </button>
         </div>
       </div>
     </header>
 
-    <main class="pt-16 pb-24 md:pb-0">
-      <!-- Hero -->
-      <section
-        class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-section-padding-mobile px-6"
-      >
-        <div class="absolute inset-0 z-0">
-          <div
-            class="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface z-10 backdrop-blur-[2px]"
-          ></div>
-          <div
-            class="bg-cover bg-center w-full h-full absolute inset-0"
-            role="img"
-            aria-label="Equipo de profesionales colaborando en una oficina moderna y luminosa"
-            style="
-              background-image: url('/assets/hero.jpg');
-            "
-          ></div>
-          <!-- Decorative blobs -->
-          <div
-            class="absolute top-20 -left-20 w-64 h-64 bg-primary-fixed-dim/40 blur-3xl rounded-full z-0"
-          ></div>
-          <div
-            class="absolute bottom-20 -right-20 w-80 h-80 bg-secondary-fixed-dim/30 blur-3xl rounded-full z-0"
-          ></div>
-        </div>
-        <div class="relative z-20 text-center max-w-2xl mx-auto flex flex-col items-center gap-8">
-          <h1
-            class="font-display-lg-mobile text-display-lg-mobile md:text-display-lg text-on-surface"
-            data-i18n-html="hero.title"
-          >
-            Especialistas en la <span class="brand-gradient-text">selección</span> y gestión de
-            talento.
-          </h1>
-          <div class="w-20 h-1 bg-primary rounded-full"></div>
-          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md" data-i18n="hero.sub">
-            Conectamos el mejor talento con las empresas líderes, potenciando el crecimiento humano y
-            organizacional.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4">
-            <a
-              href="https://hiringroom.com/jobs/get_vacancy/62d86434b9f90f34c1221820/candidates/new#step2"
-              target="_blank"
-              rel="noopener"
-              class="brand-gradient text-on-primary font-label-caps text-label-caps px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 w-full sm:w-auto text-center flex items-center justify-center gap-2"
-            >
-              <span data-i18n="cta.cv">Cargá tu CV</span>
-              <svg class="inline-block align-middle shrink-0" style="width:18px;height:18px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M440-200h80v-167l64 64 56-57-160-160-160 160 57 56 63-63v167ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
-            </a>
-            <a
-              href="#quienes-somos"
-              class="bg-surface text-primary border-2 border-surface-container-high font-label-caps text-label-caps px-8 py-4 rounded-full shadow-sm hover:bg-surface-container-low transition-all w-full sm:w-auto text-center flex items-center justify-center"
-              data-i18n="hero.more"
-            >
-              Conocé más
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Quiénes somos -->
-      <section
-        class="py-section-padding-mobile md:py-section-padding-desktop px-6 relative"
-        id="quienes-somos"
-      >
-        <div class="max-w-container mx-auto">
-          <div
-            class="bg-surface-container-lowest rounded-[2rem] p-8 md:p-12 shadow-[0_10px_40px_rgba(0,0,0,0.04)] relative overflow-hidden"
-          >
-            <!-- Subtle background texture -->
-            <div
-              class="absolute -top-32 -right-32 w-64 h-64 brand-gradient opacity-5 blob-shape-1"
-            ></div>
-            <div class="flex flex-col gap-8 relative z-10">
-              <div class="flex items-center gap-4">
-                <div
-                  class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center"
-                >
-                  <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/></svg>
-                </div>
-                <h2 class="font-headline-sm text-headline-sm text-on-surface" data-i18n="about.h">
-                  Quiénes somos
-                </h2>
-              </div>
-              <div
-                class="prose prose-lg max-w-3xl text-on-surface-variant font-body-md text-body-md leading-relaxed"
-              >
-                <p class="mb-4" data-i18n="about.p1">
-                  Somos un equipo de profesionales formados en RRHH y psicología, que compartimos
-                  los mismos valores a la hora de trabajar: buscamos que el encuentro de -al menos
-                  dos- se produzca en un marco de respeto y confianza mutua. Para ello, nos
-                  formamos de manera constante y comprometida, para alcanzar las mejores prácticas.
-                </p>
-                <p data-i18n="about.p2">
-                  Trabajamos con empresas nacionales e internacionales, seleccionando talentos de
-                  comercio e industria y del mundo IT.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sumate / CTA cards -->
-      <section
-        class="py-section-padding-mobile md:py-section-padding-desktop px-6 bg-surface-container-low relative"
-        id="sumate"
-      >
-        <div class="max-w-container mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="font-headline-sm text-headline-sm text-on-surface mb-4" data-i18n="join.h">
-              Sumate
-            </h2>
-            <p class="text-on-surface-variant" data-i18n="join.sub">
-              Descubrí las oportunidades que tenemos para vos.
+    <main id="contenido">
+      <!-- 1. Hero -->
+      <section class="lp-hero" id="inicio" aria-labelledby="hero-title">
+        <div class="lp-hero-grid">
+          <div>
+            <p data-i18n="inicio.1" class="lp-eyebrow">LP CONSULTORA | GESTIÓN DE PERSONAS Y DESARROLLO ORGANIZACIONAL</p>
+            <h1 data-i18n-html="inicio.2" id="hero-title">
+              Personas que <span class="brand-gradient-text">impulsan</span> organizaciones.
+            </h1>
+            <p data-i18n="inicio.3" class="lp-hero-lead">
+              Acompañamos a empresas en la selección, evaluación y desarrollo de talento, el
+              fortalecimiento de sus equipos y la mejora de sus estructuras y procesos de trabajo.
             </p>
+            <p data-i18n="inicio.4" class="lp-hero-support">
+              Combinamos conocimientos de la Psicología, experiencia profesional y una mirada cercana
+              para brindar soluciones adaptadas a las necesidades de cada organización.
+            </p>
+            <div class="lp-actions">
+              <a data-i18n="inicio.5" class="lp-btn lp-btn--primary" href="#servicios">Conocé nuestros servicios</a>
+              <a data-i18n="ui.9" class="lp-btn lp-btn--secondary" href="#contacto">Hablemos de tu empresa</a>
+            </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- CV card -->
-            <div
-              class="bg-surface rounded-2xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-surface-variant flex flex-col items-center text-center gap-6 group hover:border-primary/30 transition-colors"
-            >
-              <div
-                class="w-20 h-20 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-              >
-                <svg class="inline-block align-middle shrink-0" style="width:36px;height:36px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M440-200h80v-167l64 64 56-57-160-160-160 160 57 56 63-63v167ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520h200L520-800v200Z"/></svg>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-on-surface" data-i18n="join.cv.h">
-                Dejanos tu CV
-              </h3>
-              <p class="text-on-surface-variant font-body-md text-body-md" data-i18n="join.cv.p">
-                Formá parte de nuestra base de datos para futuras búsquedas.
-              </p>
-              <a
-                href="https://hiringroom.com/jobs/get_vacancy/62d86434b9f90f34c1221820/candidates/new#step2"
-                target="_blank"
-                rel="noopener"
-                class="mt-auto brand-gradient text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-full w-full hover:shadow-lg transition-all text-center"
-                data-i18n="cta.cv"
-              >
-                Cargá tu CV
-              </a>
-            </div>
-            <!-- Ofertas card -->
-            <div
-              class="bg-surface rounded-2xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-surface-variant flex flex-col items-center text-center gap-6 group hover:border-secondary/30 transition-colors"
-            >
-              <div
-                class="w-20 h-20 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
-              >
-                <svg class="inline-block align-middle shrink-0" style="width:36px;height:36px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Z"/></svg>
-              </div>
-              <h3 class="font-headline-sm text-headline-sm text-on-surface" data-i18n="join.jobs.h">
-                Búsquedas Activas
-              </h3>
-              <p class="text-on-surface-variant font-body-md text-body-md" data-i18n="join.jobs.p">
-                Explorá las oportunidades laborales actuales en empresas líderes.
-              </p>
-              <a
-                href="https://lpconsultora.hiringroom.com/jobs"
-                target="_blank"
-                rel="noopener"
-                class="mt-auto bg-surface text-secondary border-2 border-secondary font-label-caps text-label-caps px-6 py-3 rounded-full w-full hover:bg-secondary-fixed/20 transition-all text-center"
-                data-i18n="cta.jobs"
-              >
-                Ofertas laborales
-              </a>
-            </div>
+          <!-- Brand graphic: the two wings of the official LP Consultora mark (no stock photography) -->
+          <div class="lp-hero-art" aria-hidden="true">
+            <span class="blob blob--a"></span>
+            <span class="blob blob--b"></span>
+            <img class="wing-top" src="/assets/Mariposa%20superior-16cce9df.png" alt="" width="848" height="1119" />
+            <img class="wing-bottom" src="/assets/Mariposa%20inferior-9e1ed7f1.png" alt="" width="733" height="703" />
           </div>
         </div>
       </section>
 
-      <!-- Nuestros Servicios -->
-      <section
-        class="py-section-padding-mobile md:py-section-padding-desktop px-6"
-        id="servicios"
-      >
-        <div class="max-w-container mx-auto">
-          <div class="text-center mb-16">
-            <h2 class="font-headline-sm text-headline-sm text-on-surface" data-i18n="svc.h">
-              Nuestros Servicios
+      <!-- 2. ¿En qué podemos ayudarte? -->
+      <section class="lp-section lp-section--alt" id="ayuda" aria-labelledby="ayuda-title">
+        <div class="lp-container">
+          <div class="lp-head">
+            <h2 data-i18n="ayuda.1" class="lp-h2" id="ayuda-title">
+              Cada organización tiene sus propios desafíos. Te ayudamos a abordarlos.
             </h2>
-            <div class="w-12 h-1 bg-secondary rounded-full mx-auto mt-4"></div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Servicio 1 -->
-            <div class="flex flex-col items-center text-center gap-4">
-              <div
-                class="w-24 h-24 rounded-[2rem] bg-surface-container-low flex items-center justify-center shadow-sm relative overflow-hidden group"
-              >
-                <div
-                  class="absolute inset-0 brand-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                ></div>
-                <svg class="text-primary inline-block align-middle shrink-0" style="width:36px;height:36px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M440-504.62q-49.5 0-84.75-35.25T320-624.62q0-49.5 35.25-84.75T440-744.62q49.5 0 84.75 35.25T560-624.62q0 49.5-35.25 84.75T440-504.62Zm0-40q33 0 56.5-23.5t23.5-56.5q0-33-23.5-56.5t-56.5-23.5q-33 0-56.5 23.5t-23.5 56.5q0 33 23.5 56.5t56.5 23.5ZM848.62-83.08 742.15-189.54q-19.46 13.54-40.38 20-20.92 6.46-41.61 6.46-57.47 0-97.28-39.99-39.8-39.98-39.8-97.11t39.99-96.94q39.98-39.8 97.11-39.8t96.94 39.93q39.8 39.94 39.8 96.99 0 20.85-6.46 41.77t-20 40.38l106.46 106.47-28.3 28.3ZM729.08-230.92q27.84-27.85 27.84-69.08t-27.84-69.08q-27.85-27.84-69.08-27.84t-69.08 27.84q-27.84 27.85-27.84 69.08t27.84 69.08q27.85 27.84 69.08 27.84t69.08-27.84ZM160-215.38V-281q0-25.54 14.31-46.46t38.92-33.62q43.31-21.38 112.31-40.15t149.31-12.62q-5.85 10.31-10.49 19.8-4.63 9.48-7.36 19.67-71.54-3.47-132.38 14.34-60.85 17.81-92.08 34.04-15.39 7.31-23.96 19.24Q200-294.82 200-281v25.62h247.77q1.92 9.69 5.42 20.07 3.5 10.39 7.81 19.93H160Zm280-409.24Zm7.77 369.24Z"/></svg>
+          <div class="lp-grid lp-grid--5">
+            <article class="lp-card lp-need">
+              <h3 data-i18n="ayuda.2">¿Necesitás incorporar talento?</h3>
+              <p data-i18n="ayuda.3">
+                Identificamos y evaluamos candidatos que se ajusten a las necesidades de tu empresa y
+                a su cultura de trabajo.
+              </p>
+              <a data-i18n-html="ayuda.4" class="lp-link" href="#svc-reclutamiento">Reclutamiento y selección <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="lp-card lp-need">
+              <h3 data-i18n="ayuda.5">¿Querés tomar decisiones de contratación con mayor información?</h3>
+              <p data-i18n="ayuda.6">
+                Realizamos evaluaciones psicotécnicas para conocer los recursos, fortalezas y
+                adecuación de cada candidato.
+              </p>
+              <a data-i18n-html="ayuda.7" class="lp-link" href="#svc-evaluaciones">Evaluaciones psicotécnicas <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="lp-card lp-need">
+              <h3 data-i18n="ayuda.8">¿Buscás identificar y desarrollar el potencial de tu equipo?</h3>
+              <p data-i18n="ayuda.9">
+                Evaluamos capacidades y competencias para acompañar decisiones de promoción,
+                desarrollo y sucesión.
+              </p>
+              <a data-i18n-html="ayuda.10" class="lp-link" href="#svc-mapeo">Mapeo de talentos y Assessment Center <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="lp-card lp-need">
+              <h3 data-i18n="ayuda.11">¿Necesitás fortalecer los vínculos y el trabajo en equipo?</h3>
+              <p data-i18n="ayuda.12">
+                Diseñamos talleres participativos para desarrollar la comunicación, el liderazgo y la
+                colaboración.
+              </p>
+              <a data-i18n-html="ayuda.13" class="lp-link" href="#svc-talleres">Talleres para equipos <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="lp-card lp-need">
+              <h3 data-i18n="ayuda.14">¿Tu empresa está creciendo y necesitás organizarla mejor?</h3>
+              <p data-i18n="ayuda.15">
+                Te acompañamos a definir roles, ordenar procesos y fortalecer el funcionamiento de tu
+                organización.
+              </p>
+              <a data-i18n-html="ayuda.16" class="lp-link" href="#svc-consultoria">Consultoría organizacional <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Servicios -->
+      <section class="lp-section" id="servicios" aria-labelledby="servicios-title">
+        <div class="lp-container">
+          <div class="lp-head">
+            <h2 data-i18n="servicios.1" class="lp-h2" id="servicios-title">Soluciones que acompañan el crecimiento de tu empresa.</h2>
+          </div>
+          <div class="lp-grid lp-grid--3">
+            <article class="lp-card lp-service" id="svc-reclutamiento">
+              <div class="lp-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6 1.2 0 2.3.3 3.2.7"/><circle cx="17" cy="16.5" r="3"/><path d="m19.2 18.7 2.3 2.3"/></svg>
               </div>
-              <h3
-                class="font-headline-sm text-[20px] font-semibold text-on-surface"
-                data-i18n="svc.1.h"
-              >
-                Selección de personal
-              </h3>
-              <p
-                class="text-on-surface-variant font-body-md text-body-md px-4 text-left"
-                data-i18n="svc.1.p"
-              >
-                Realizamos procesos de selección end to end, comprometidos con ambas partes, la
-                empresa y los candidatos, futuros colaboradores. Brindamos soluciones a las
-                necesidades de las empresas por medio de un trabajo de relevamiento detallista y
-                comprometido, como paso previo a su inicio, a fines de obtener resultados
-                satisfactorios en el menor tiempo posible y con el mayor impacto positivo para la
-                resolución del proceso. Procuramos que el proceso de selección sea una experiencia
-                amena e -incluso- de crecimiento y aprendizaje para las personas que participan en
-                el. Para ello, brindamos un acompañamiento cercano, empático y comprometido a los
-                candidatos.
+              <h3 data-i18n="servicios.2">Reclutamiento y selección de personal</h3>
+              <p data-i18n="servicios.3" class="lp-tagline">El talento que tu empresa necesita, más cerca.</p>
+              <p data-i18n="servicios.4">
+                Acompañamos procesos integrales de reclutamiento y selección, desde el relevamiento de
+                necesidades y la definición del perfil hasta la identificación, evaluación y
+                presentación de candidatos. Combinamos entrevistas, recursos tecnológicos y una mirada
+                profesional que considera tanto las competencias requeridas como la cultura de cada
+                organización. Tenemos experiencia en perfiles comerciales, administrativos,
+                gastronómicos, industriales, profesionales y tecnológicos.
+              </p>
+              <a data-i18n-html="servicios.5" class="lp-link" href="#contacto" data-service="seleccion">Consultanos por este servicio <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="lp-card lp-service" id="svc-evaluaciones">
+              <div class="lp-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.5" width="14" height="17" rx="2"/><path d="M9 4.5v-1.5h6v1.5"/><path d="m8.8 13.2 2.2 2.2 4.2-4.6"/></svg>
+              </div>
+              <h3 data-i18n="servicios.6">Evaluaciones psicotécnicas</h3>
+              <p data-i18n="servicios.7" class="lp-tagline">Decisiones de incorporación con mayor respaldo profesional.</p>
+              <p data-i18n="servicios.8">
+                Realizamos evaluaciones psicolaborales mediante entrevistas y técnicas psicológicas,
+                orientadas a conocer los recursos personales, las modalidades de trabajo y la
+                adecuación de cada candidato al puesto. Elaboramos informes con fortalezas,
+                oportunidades de desarrollo y recomendaciones que acompañan las decisiones de
+                incorporación y el proceso de integración a la empresa.
+              </p>
+              <a data-i18n-html="servicios.5" class="lp-link" href="#contacto" data-service="psicotecnicas">Consultanos por este servicio <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="lp-card lp-service" id="svc-mapeo">
+              <div class="lp-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5h17"/><path d="M6 20.5v-5M11 20.5v-8M16 20.5v-11"/><path d="m4.5 10 4.5-3.5 3.5 2.5 6-5"/><path d="M15.5 4h3v3"/></svg>
+              </div>
+              <h3 data-i18n="servicios.9">Mapeo de talentos y potencial</h3>
+              <p data-i18n="servicios.10" class="lp-tagline">Reconocemos el potencial que impulsa el crecimiento.</p>
+              <p data-i18n="servicios.11">
+                Evaluamos el potencial de desarrollo de las personas para acompañar decisiones de
+                promoción, planes de carrera y sucesión. A través de herramientas especializadas,
+                incluyendo el enfoque de Elliott Jaques, aportamos información para identificar
+                capacidades y proyectar oportunidades de crecimiento dentro de la organización.
+              </p>
+              <a data-i18n-html="servicios.5" class="lp-link" href="#contacto" data-service="mapeo">Consultanos por este servicio <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="lp-card lp-service" id="svc-assessment">
+              <div class="lp-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h3 data-i18n="servicios.12">Assessment Center</h3>
+              <p data-i18n="servicios.13" class="lp-tagline">Observamos competencias en acción.</p>
+              <p data-i18n="servicios.14">
+                Diseñamos instancias de evaluación individuales y grupales a partir de situaciones
+                vinculadas con el contexto laboral. Estas actividades permiten observar competencias
+                claves como liderazgo, comunicación, trabajo en equipo, orientación comercial y
+                resolución de problemas. Una metodología que complementa los procesos de selección,
+                promoción y desarrollo.
+              </p>
+              <a data-i18n-html="servicios.5" class="lp-link" href="#contacto" data-service="assessment">Consultanos por este servicio <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="lp-card lp-service" id="svc-consultoria">
+              <div class="lp-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2.5" y="16" width="6" height="5" rx="1"/><rect x="15.5" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M5.5 16v-4h13v4"/></svg>
+              </div>
+              <h3 data-i18n="servicios.15">Consultoría organizacional</h3>
+              <p data-i18n="servicios.16" class="lp-tagline">Cuando tu empresa crece, su organización también necesita evolucionar.</p>
+              <p data-i18n="servicios.17">
+                Realizamos diagnósticos organizacionales y diseñamos intervenciones adaptadas a la
+                realidad de cada empresa. Trabajamos sobre estructuras, organigramas, definición de
+                puestos, responsabilidades, procesos, políticas internas, cultura, clima y dinámicas
+                de trabajo. Acompañamos la implementación de mejoras que aporten claridad,
+                coordinación y sostenibilidad.
+              </p>
+              <a data-i18n-html="servicios.5" class="lp-link" href="#contacto" data-service="consultoria">Consultanos por este servicio <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="lp-card lp-service" id="svc-talleres">
+              <div class="lp-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 19.5c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M15 14.4c.6-.2 1.2-.3 1.8-.3 2.4 0 4.2 1.7 4.2 4.4"/></svg>
+              </div>
+              <h3 data-i18n="servicios.18">Talleres y desarrollo de equipos</h3>
+              <p data-i18n="servicios.19" class="lp-tagline">Mejores vínculos. Mejores formas de trabajar.</p>
+              <p data-i18n="servicios.20">
+                Diseñamos y facilitamos talleres grupales a medida para fortalecer la comunicación
+                asertiva, la escucha activa, el liderazgo, el trabajo en equipo y la gestión
+                emocional. Utilizamos propuestas participativas y ejercicios prácticos que promueven
+                la reflexión y permiten trasladar los aprendizajes al trabajo cotidiano.
+              </p>
+              <a data-i18n-html="servicios.5" class="lp-link" href="#contacto" data-service="talleres">Consultanos por este servicio <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Quiénes somos -->
+      <section class="lp-section lp-section--alt" id="quienes-somos" aria-labelledby="quienes-title">
+        <div class="lp-container">
+          <div class="lp-about">
+            <h2 data-i18n="quienes_somos.1" class="lp-h2 lp-h2--left" id="quienes-title" style="margin-bottom: 2rem">
+              Conocemos a las personas. Comprendemos a las organizaciones.
+            </h2>
+            <div class="lp-prose">
+              <p data-i18n="quienes_somos.2">
+                En LP Consultora somos un equipo de profesionales de Psicología especializados en
+                gestión de personas y desarrollo organizacional.
+              </p>
+              <p data-i18n="quienes_somos.3">
+                Trabajamos junto a empresas de diferentes sectores, acompañándolas en sus desafíos de
+                selección, evaluación y desarrollo de talento, así como en el fortalecimiento de sus
+                equipos, estructuras y procesos organizacionales.
+              </p>
+              <p data-i18n="quienes_somos.4">
+                Creemos que cada organización tiene una identidad, una cultura y una forma particular
+                de trabajar. Por eso, nos involucramos en conocer su realidad, comprender sus
+                necesidades y diseñar propuestas que puedan llevarse a la práctica.
+              </p>
+              <p data-i18n="quienes_somos.5">
+                Nuestra forma de trabajo combina conocimiento técnico, experiencia, cercanía y
+                colaboración, construyendo relaciones de confianza que nos permiten acompañar a
+                nuestros clientes en sus distintas etapas de crecimiento.
               </p>
             </div>
-            <!-- Servicio 2 -->
-            <div class="flex flex-col items-center text-center gap-4">
-              <div
-                class="w-24 h-24 rounded-[2rem] bg-surface-container-low flex items-center justify-center shadow-sm relative overflow-hidden group"
-              >
-                <div
-                  class="absolute inset-0 brand-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                ></div>
-                <svg class="text-primary inline-block align-middle shrink-0" style="width:36px;height:36px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M184.62-160q-27.62 0-46.12-18.5Q120-197 120-224.62v-390.76q0-27.62 18.5-46.12Q157-680 184.62-680H360v-55.39q0-27.61 18.5-46.11t46.12-18.5h110.76q27.62 0 46.12 18.5Q600-763 600-735.39V-680h175.38q27.62 0 46.12 18.5Q840-643 840-615.38v390.76q0 27.62-18.5 46.12Q803-160 775.38-160H184.62ZM400-680h160v-55.39q0-9.23-7.69-16.92-7.69-7.69-16.93-7.69H424.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.92V-680Zm400 300H560v60H400v-60H160v155.38q0 9.24 7.69 16.93 7.69 7.69 16.93 7.69h590.76q9.24 0 16.93-7.69 7.69-7.69 7.69-16.93V-380Zm-360 20h80v-80h-80v80Zm-280-60h240v-60h160v60h240v-195.38q0-9.24-7.69-16.93-7.69-7.69-16.93-7.69H184.62q-9.24 0-16.93 7.69-7.69 7.69-7.69 16.93V-420Zm320 20Z"/></svg>
-              </div>
-              <h3
-                class="font-headline-sm text-[20px] font-semibold text-on-surface"
-                data-i18n="svc.2.h"
-              >
-                Consultoría en RRHH
-              </h3>
-              <p
-                class="text-on-surface-variant font-body-md text-body-md px-4 text-left"
-                data-i18n="svc.2.p"
-              >
-                Realizamos procesos de diagnóstico organizacional que nos permita proponer acciones
-                de mejoras en los procesos evaluados.
+          </div>
+
+          <!-- Founder: photo left, text right -->
+          <div class="lp-founder">
+            <figure class="lp-about-photo">
+              <img
+                src="/assets/lara.jpg"
+                width="864"
+                height="1184"
+                loading="lazy"
+                decoding="async"
+                alt="Lara Ponce, fundadora y directora de LP Consultora"
+                data-i18n-alt="aria.photo"
+              />
+            </figure>
+            <div class="lp-founder-text">
+              <h3 data-i18n="quienes_somos.f1">Lara Ponce</h3>
+              <p class="lp-founder-role" data-i18n="quienes_somos.f2">Fundadora y Directora de LP Consultora</p>
+              <p data-i18n="quienes_somos.f3">
+                Licenciada en Psicología, con formación especializada en Recursos Humanos,
+                Psicodiagnóstico y Psicología del Trabajo y las Organizaciones.
               </p>
-            </div>
-            <!-- Servicio 3 -->
-            <div class="flex flex-col items-center text-center gap-4">
-              <div
-                class="w-24 h-24 rounded-[2rem] bg-surface-container-low flex items-center justify-center shadow-sm relative overflow-hidden group"
-              >
-                <div
-                  class="absolute inset-0 brand-gradient opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                ></div>
-                <svg class="text-primary inline-block align-middle shrink-0" style="width:36px;height:36px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M280-120v-150.46q-57-52-88.5-116.89Q160-452.23 160-520.77q0-133.08 93.46-226.15Q346.92-840 480-840q108.08 0 195.35 65.81t113.19 169.96L829.77-440q4.23 15.15-5.46 27.58Q814.62-400 798.46-400H720v135.38q0 26.85-18.88 45.74Q682.23-200 655.38-200H560v80h-40v-120h135.38q10.77 0 17.7-6.92 6.92-6.93 6.92-17.7V-440h108l-38-155q-23-91.77-98.77-148.38Q575.46-800 480-800q-116 0-198 81.38-82 81.39-82 197.39 0 60 24.5 113.61Q249-354 294-312l26 24v168h-40Zm214-340Zm-36.31 83.08h44.62l2.92-36.93q15.69-3 29.89-10.46 14.19-7.46 23.8-19.38l32.16 16.15 22.3-38-29.23-21.54q6.62-16.46 6.62-32.92t-6.62-32.92l29.23-21.54-22.3-38-32.16 16.15q-9.61-11.92-23.8-19.38-14.2-7.46-29.89-10.46l-2.92-36.93h-44.62l-2.92 36.93q-15.69 3-29.89 10.46-14.19 7.46-23.8 19.38l-32.16-16.15-22.3 38 29.23 21.54q-6.62 16.46-6.62 32.92t6.62 32.92l-29.23 21.54 22.3 38 32.16-16.15q9.61 11.92 23.8 19.38 14.2 7.46 29.89 10.46l2.92 36.93Zm-30.57-90.2q-21.74-21.73-21.74-52.88 0-31.15 21.74-52.88 21.73-21.74 52.88-21.74 31.15 0 52.88 21.74 21.74 21.73 21.74 52.88 0 31.15-21.74 52.88-21.73 21.74-52.88 21.74-31.15 0-52.88-21.74Z"/></svg>
-              </div>
-              <h3
-                class="font-headline-sm text-[20px] font-semibold text-on-surface"
-                data-i18n="svc.3.h"
-              >
-                Evaluaciones psicotécnicas
-              </h3>
-              <p
-                class="text-on-surface-variant font-body-md text-body-md px-4 text-left"
-                data-i18n="svc.3.p"
-              >
-                Realizamos evaluaciones con técnicas y tests psicológicos que nos ayuden a conocer y
-                definir el grado de desarrollo de las competencias requeridas para cada posición y
-                la adecuación del candidato evaluado para con el puesto en cuestión. Evaluaciones de
-                potencial a partir de la teoría de Elliot Jacques, a fines de conocer el grado de
-                competencias y habilidades de los candidatos, a fines de determinar su potencial
-                para desarrollarse en puestos de mayor jerarquía y responsabilidad.
+              <p data-i18n="quienes_somos.f4">
+                Cuenta con experiencia en gestión de personas, reclutamiento y selección, evaluación de
+                talento y desarrollo organizacional, acompañando a empresas de distintos sectores en
+                sus desafíos de incorporación, desarrollo y gestión de equipos.
+              </p>
+              <p data-i18n="quienes_somos.f5">
+                Como fundadora y directora de LP Consultora, lidera la estrategia y el desarrollo del
+                negocio, coordina proyectos y trabaja junto a un equipo de profesionales de Psicología,
+                integrando diferentes perspectivas para brindar soluciones adaptadas a las necesidades
+                de cada organización.
+              </p>
+              <p data-i18n="quienes_somos.f6">
+                Su enfoque profesional combina los conocimientos de la Psicología con una mirada
+                práctica sobre el funcionamiento de las empresas, priorizando la cercanía, el trabajo
+                colaborativo y la construcción de relaciones de confianza.
+              </p>
+              <p data-i18n="quienes_somos.f7">
+                Cree en el potencial de las personas como motor de crecimiento y en la importancia de
+                construir organizaciones donde el desarrollo humano y los objetivos del negocio puedan
+                avanzar juntos.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Testimonios -->
-      <section
-        class="py-section-padding-mobile md:py-section-padding-desktop px-6 bg-surface-container-lowest border-y border-surface-variant relative overflow-hidden"
-        id="testimonios"
-      >
-        <!-- Decorative background -->
-        <div
-          class="absolute top-0 right-0 w-full h-full opacity-30 pointer-events-none flex justify-end items-start -z-10"
-        >
-          <svg
-            class="w-96 h-96 transform translate-x-1/3 -translate-y-1/4"
-            viewBox="0 0 200 200"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              d="M42.7,-73.4C55.9,-65.8,67.6,-54.3,76.5,-41.3C85.4,-28.3,91.5,-14.1,89.5,-0.8C87.5,12.5,77.4,25,68.4,36.8C59.4,48.5,51.5,59.5,40.4,66.8C29.3,74.1,14.6,77.7,0.7,76.4C-13.2,75.1,-26.4,68.9,-37.2,60.8C-47.9,52.7,-56.3,42.8,-63.9,31.7C-71.5,20.6,-78.3,8.4,-77.8,-3.6C-77.2,-15.6,-69.3,-27.4,-60.9,-38.3C-52.4,-49.2,-43.3,-59.1,-31.6,-67.6C-19.8,-76.1,-9.9,-83.1,2.8,-88.1C15.5,-93.1,31.1,-96,42.7,-73.4Z"
-              fill="#e8ddff"
-              transform="translate(100 100)"
-            ></path>
-          </svg>
-        </div>
-        <div class="max-w-container mx-auto z-10 relative">
-          <h2
-            class="font-headline-sm text-headline-sm text-center text-on-surface mb-12"
-            data-i18n="test.h"
-          >
-            Testimonios
-          </h2>
-          <!-- Horizontal snap-scroller on mobile, 3-up grid from md so the cards fill the row -->
-          <div
-            class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 hide-scrollbar md:grid md:grid-cols-3 md:overflow-visible md:pb-0"
-          >
-            <!-- Testimonio 1 -->
-            <div
-              class="snap-center shrink-0 w-[85vw] md:w-auto md:shrink bg-surface rounded-[24px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] flex flex-col justify-between border border-surface-variant"
-            >
-              <div>
-                <svg class="text-primary/20 mb-4 block inline-block align-middle shrink-0" style="width:48px;height:48px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM362.5-517.5Q380-535 380-560t-17.5-42.5Q345-620 320-620t-42.5 17.5Q260-585 260-560t17.5 42.5Q295-500 320-500t42.5-17.5Zm360 0Q740-535 740-560t-17.5-42.5Q705-620 680-620t-42.5 17.5Q620-585 620-560t17.5 42.5Q655-500 680-500t42.5-17.5ZM680-560Zm-360 0Z"/></svg>
-                <p
-                  class="italic font-body-md text-body-md text-on-surface-variant mb-6"
-                  data-i18n="test.1.q"
-                >
-                  "Mi experiencia con la consultora fue maravillosa. La amabilidad, el trato y la
-                  cordialidad de las personas que avalaron mi proceso, fue excelente. Solo palabras
-                  de agradecimiento a Lara Ponce y María Paula Lobos, que fueron fundamentales para
-                  lograr el objetivo."
-                </p>
-              </div>
-              <div class="flex items-center gap-4 pt-4 border-t border-surface-variant/50">
-                <div
-                  class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    alt="Adrián Lerner"
-                    src="/assets/testimonial-adrian.jpg"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-semibold text-on-surface">Adrián Lerner</h4>
-                  <p class="text-[12px] text-on-surface-variant" data-i18n="test.1.r">
-                    Proceso: cajero
-                  </p>
-                </div>
-              </div>
+      <!-- 5. Misión, visión y valores -->
+      <section data-i18n-aria="aria.7" class="lp-section" id="mision-vision-valores" aria-label="Misión, visión y valores">
+        <div class="lp-container">
+          <div class="lp-mv">
+            <div class="lp-mv-card lp-mv-card--mission">
+              <h2 data-i18n="mision_vision_valores.1">Nuestra misión</h2>
+              <p data-i18n="mision_vision_valores.2">
+                Impulsar el crecimiento de las organizaciones a través de las personas, acompañando la
+                selección y el desarrollo de talento, el fortalecimiento de equipos y la mejora de los
+                procesos organizacionales, con una mirada profesional, cercana y colaborativa.
+              </p>
             </div>
-            <!-- Testimonio 2 -->
-            <div
-              class="snap-center shrink-0 w-[85vw] md:w-auto md:shrink bg-surface rounded-[24px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] flex flex-col justify-between border border-surface-variant"
-            >
-              <div>
-                <svg class="text-primary/20 mb-4 block inline-block align-middle shrink-0" style="width:48px;height:48px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM362.5-517.5Q380-535 380-560t-17.5-42.5Q345-620 320-620t-42.5 17.5Q260-585 260-560t17.5 42.5Q295-500 320-500t42.5-17.5Zm360 0Q740-535 740-560t-17.5-42.5Q705-620 680-620t-42.5 17.5Q620-585 620-560t17.5 42.5Q655-500 680-500t42.5-17.5ZM680-560Zm-360 0Z"/></svg>
-                <p
-                  class="italic font-body-md text-body-md text-on-surface-variant mb-6"
-                  data-i18n="test.2.q"
-                >
-                  "Quería agradecer a LP consultora por acompañarme en este proceso de cambio
-                  laboral. Donde me sentí muy acompañado con consejos siempre con una mirada humana
-                  y estando al tanto de todos los pasos que fui dando y luego de mi inicio de este
-                  nuevo camino siguiendo en contacto con migo para ver cualquier necesidad que pueda
-                  tener. Muchas gracias."
-                </p>
-              </div>
-              <div class="flex items-center gap-4 pt-4 border-t border-surface-variant/50">
-                <div
-                  class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    alt="Matias Courroux"
-                    src="/assets/testimonial-matias.jpg"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-semibold text-on-surface">Matias Courroux</h4>
-                  <p class="text-[12px] text-on-surface-variant" data-i18n="test.2.r">
-                    Proceso: supervisor comercial
-                  </p>
-                </div>
-              </div>
+            <div class="lp-mv-card lp-mv-card--vision">
+              <h2 data-i18n="mision_vision_valores.3">Nuestra visión</h2>
+              <p data-i18n="mision_vision_valores.4">
+                Ser una consultora referente en gestión de personas y desarrollo organizacional,
+                reconocida por su profesionalismo, cercanía y capacidad para comprender las
+                necesidades de cada empresa.
+              </p>
+              <p data-i18n="mision_vision_valores.5">
+                Aspiramos a construir relaciones de confianza y acompañar a las organizaciones en su
+                evolución, promoviendo entornos de trabajo donde las personas puedan desarrollar su
+                potencial y contribuir al crecimiento colectivo.
+              </p>
             </div>
-            <!-- Testimonio 3 -->
-            <div
-              class="snap-center shrink-0 w-[85vw] md:w-auto md:shrink bg-surface rounded-[24px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] flex flex-col justify-between border border-surface-variant"
-            >
-              <div>
-                <svg class="text-primary/20 mb-4 block inline-block align-middle shrink-0" style="width:48px;height:48px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM362.5-517.5Q380-535 380-560t-17.5-42.5Q345-620 320-620t-42.5 17.5Q260-585 260-560t17.5 42.5Q295-500 320-500t42.5-17.5Zm360 0Q740-535 740-560t-17.5-42.5Q705-620 680-620t-42.5 17.5Q620-585 620-560t17.5 42.5Q655-500 680-500t42.5-17.5ZM680-560Zm-360 0Z"/></svg>
-                <p
-                  class="italic font-body-md text-body-md text-on-surface-variant mb-6"
-                  data-i18n="test.3.q"
-                >
-                  "Gracias a los chicos de LP consultora pude conseguir el trabajo en donde estoy
-                  actualmente como ejecutivo de cuentas. Me acompañaron en todo el proceso de
-                  reclutamiento, incluso una vez pasado ese proceso me seguían escribiendo para
-                  saber cómo iba en el nuevo trabajo. Los súper recomiendo, son muy buenos
-                  profesionales y siempre comprometidos en acompañarte!"
-                </p>
-              </div>
-              <div class="flex items-center gap-4 pt-4 border-t border-surface-variant/50">
-                <div
-                  class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 overflow-hidden"
-                >
-                  <img
-                    class="w-full h-full object-cover"
-                    alt="Denise Mafía"
-                    src="/assets/testimonial-denise.jpg"
-                  />
-                </div>
-                <div>
-                  <h4 class="font-semibold text-on-surface">Denise Mafía</h4>
-                  <p class="text-[12px] text-on-surface-variant" data-i18n="test.3.r">
-                    Proceso: ejecutivo de cuentas
-                  </p>
-                </div>
-              </div>
-            </div>
+          </div>
+
+          <h2 data-i18n="mision_vision_valores.6" class="lp-values-title">Nuestros valores</h2>
+          <div class="lp-grid lp-grid--5">
+            <article class="lp-card lp-value">
+              <h3 data-i18n="mision_vision_valores.7">Cercanía y compromiso</h3>
+              <p data-i18n="mision_vision_valores.8">
+                Construimos relaciones basadas en la confianza, la escucha y el compromiso. Nos
+                involucramos en comprender las necesidades de cada organización y acompañamos sus
+                desafíos con responsabilidad.
+              </p>
+            </article>
+            <article class="lp-card lp-value">
+              <h3 data-i18n="mision_vision_valores.9">Profesionalismo y ética</h3>
+              <p data-i18n="mision_vision_valores.10">
+                Trabajamos con rigurosidad técnica, confidencialidad y respeto por las personas,
+                fundamentando nuestras intervenciones en conocimientos especializados y prácticas
+                profesionales responsables.
+              </p>
+            </article>
+            <article class="lp-card lp-value">
+              <h3 data-i18n="mision_vision_valores.11">Trabajo colaborativo</h3>
+              <p data-i18n="mision_vision_valores.12">
+                Creemos en el valor de construir junto a otros. Integramos diferentes miradas
+                profesionales y promovemos el diálogo, la participación y la cooperación.
+              </p>
+            </article>
+            <article class="lp-card lp-value">
+              <h3 data-i18n="mision_vision_valores.13">Flexibilidad y mejora continua</h3>
+              <p data-i18n="mision_vision_valores.14">
+                Reconocemos que cada organización tiene necesidades y características propias.
+                Adaptamos nuestras propuestas y revisamos nuestras prácticas para ofrecer soluciones
+                cada vez más efectivas.
+              </p>
+            </article>
+            <article class="lp-card lp-value">
+              <h3 data-i18n="mision_vision_valores.15">Desarrollo de las personas</h3>
+              <p data-i18n="mision_vision_valores.16">
+                Reconocemos el potencial de las personas como motor de crecimiento y transformación.
+                Promovemos oportunidades para fortalecer capacidades, desarrollar equipos y contribuir
+                al crecimiento organizacional.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- Confían en nosotros -->
-      <section
-        class="py-section-padding-mobile md:py-section-padding-desktop px-6 bg-surface"
-        id="empresas"
-      >
-        <div class="max-w-container mx-auto">
-          <h2
-            class="font-headline-sm text-headline-sm text-center text-on-surface mb-8"
-            data-i18n="clients.h"
-          >
-            Confían en nosotros
-          </h2>
-          <!-- Original client logos and outbound links, restored from the previous site.
-               Per-logo heights are computed from each PNG's measured opaque content box so the
-               VISIBLE mark lands at a consistent optical height despite very uneven baked-in
-               padding (Pintecord/Wise CX/HERRACENTER carry 24-49% transparent padding).
-               Clients with a separate isologo show it before the wordmark, as before. -->
+      <!-- 6. Cómo trabajamos -->
+      <section class="lp-section lp-section--alt" id="como-trabajamos" aria-labelledby="forma-title">
+        <div class="lp-container">
+          <div class="lp-head">
+            <h2 data-i18n="como_trabajamos.1" class="lp-h2" id="forma-title">Escuchamos, comprendemos y acompañamos.</h2>
+          </div>
+          <ol class="lp-grid lp-grid--4" style="list-style: none; margin: 0; padding: 0">
+            <li class="lp-card lp-step">
+              <h3><span class="lp-step-n" aria-hidden="true">1</span><span data-i18n-html="como_trabajamos.2"><span class="lp-sr">Paso 1: </span>Conocemos tu organización</span></h3>
+              <p data-i18n="como_trabajamos.3">Nos involucramos en comprender su contexto, sus necesidades y sus objetivos.</p>
+            </li>
+            <li class="lp-card lp-step">
+              <h3><span class="lp-step-n" aria-hidden="true">2</span><span data-i18n-html="como_trabajamos.4"><span class="lp-sr">Paso 2: </span>Diseñamos propuestas a medida</span></h3>
+              <p data-i18n="como_trabajamos.5">
+                Integramos herramientas y conocimientos especializados para desarrollar soluciones
+                adaptadas a cada situación.
+              </p>
+            </li>
+            <li class="lp-card lp-step">
+              <h3><span class="lp-step-n" aria-hidden="true">3</span><span data-i18n-html="como_trabajamos.6"><span class="lp-sr">Paso 3: </span>Trabajamos junto a tu equipo</span></h3>
+              <p data-i18n="como_trabajamos.7">
+                Implementamos las acciones acordadas, promoviendo la participación y el trabajo
+                colaborativo.
+              </p>
+            </li>
+            <li class="lp-card lp-step">
+              <h3><span class="lp-step-n" aria-hidden="true">4</span><span data-i18n-html="como_trabajamos.8"><span class="lp-sr">Paso 4: </span>Acompañamos los procesos de mejora</span></h3>
+              <p data-i18n="como_trabajamos.9">
+                Realizamos seguimiento, compartimos recomendaciones y contribuimos a consolidar los
+                avances.
+              </p>
+            </li>
+          </ol>
+          <div class="lp-center-cta">
+            <a data-i18n="como_trabajamos.10" class="lp-btn lp-btn--primary" href="#contacto">Conocé cómo podemos acompañar a tu empresa</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Clientes (module preserved from the previous site: logos, names, order and links unchanged) -->
+      <section class="lp-section" id="clientes" aria-labelledby="clientes-title">
+        <div class="lp-container">
+          <div class="lp-head" style="margin-bottom: 2rem">
+            <h2 data-i18n="clientes.1" class="lp-h2" id="clientes-title">Confían en nosotros</h2>
+          </div>
           <div
             class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 md:gap-12 items-center justify-items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
           >
@@ -871,513 +1713,560 @@
           </div>
         </div>
       </section>
-    </main>
 
-    <!-- Bottom Nav Bar (mobile only) -->
-    <nav
-      class="md:hidden bg-surface/70 dark:bg-surface-dim/70 fixed bottom-0 left-0 w-full z-50 rounded-t-xl backdrop-blur-xl shadow-[0_-10px_40px_rgba(0,0,0,0.04)] flex justify-around items-center py-3 px-4 font-label-caps text-label-caps"
-    >
-      <a
-        class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary-container text-on-primary-container rounded-full px-4 py-1 transition-all duration-300 ease-in-out"
-        href="#"
-      >
-        <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M160-120v-480l320-240 320 240v480H560v-280H400v280H160Z"/></svg>
-        <span class="mt-1" data-i18n="bnav.home">Inicio</span>
-      </a>
-      <a
-        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all duration-300 ease-in-out"
-        href="https://hiringroom.com/jobs/get_vacancy/62d86434b9f90f34c1221820/candidates/new#step2"
-        target="_blank"
-        rel="noopener"
-      >
-        <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M440-200h80v-167l64 64 56-57-160-160-160 160 57 56 63-63v167ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
-        <span class="mt-1" data-i18n="bnav.cv">CV</span>
-      </a>
-      <a
-        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all duration-300 ease-in-out"
-        href="https://lpconsultora.hiringroom.com/jobs"
-        target="_blank"
-        rel="noopener"
-      >
-        <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>
-        <span class="mt-1" data-i18n="bnav.jobs">Ofertas</span>
-      </a>
-      <a
-        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-all duration-300 ease-in-out"
-        href="#contacto"
-      >
-        <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m480-80-10-120h-10q-142 0-241-99t-99-241q0-142 99-241t241-99q71 0 132.5 26.5t108 73q46.5 46.5 73 108T800-540q0 75-24.5 144t-67 128q-42.5 59-101 107T480-80Zm80-146q71-60 115.5-140.5T720-540q0-109-75.5-184.5T460-800q-109 0-184.5 75.5T200-540q0 109 75.5 184.5T460-280h100v54Zm-72-107q12-12 12-29t-12-29q-12-12-29-12t-29 12q-12 12-12 29t12 29q12 12 29 12t29-12Zm-58-115h60q0-30 6-42t38-44q18-18 30-39t12-45q0-51-34.5-76.5T460-720q-44 0-74 24.5T344-636l56 22q5-17 19-33.5t41-16.5q27 0 40.5 15t13.5 33q0 17-10 30.5T480-558q-35 30-42.5 47.5T430-448Zm30-65Z"/></svg>
-        <span class="mt-1" data-i18n="bnav.contact">Contacto</span>
-      </a>
-    </nav>
-
-    <!-- Footer -->
-    <footer
-      class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full rounded-t-3xl pt-12 pb-32 md:pb-20 px-6 font-body-md text-body-md border-t border-surface-variant"
-      id="contacto"
-    >
-      <div class="max-w-container mx-auto flex flex-col items-center text-center gap-8">
-        <div class="flex flex-col items-center gap-2">
-          <img
-            src="/assets/Logo%20footer-85ce6ab7.svg"
-            alt="LP Consultora"
-            class="h-10 w-auto object-contain"
-          />
-          <p class="text-on-surface-variant max-w-sm" data-i18n="footer.tagline">
-            Especialistas en la selección y gestión de talento humano.
-          </p>
-        </div>
-        <h2 class="font-headline-sm text-headline-sm text-on-surface" data-i18n="footer.contact">
-          Contacto
-        </h2>
-        <!-- Contact form (handled by /contact.php) -->
-        <form id="contactForm" class="cf" action="/contact.php" method="post">
-          <p class="cf-intro" data-i18n="cf.intro">
-            Contanos qué necesitás y te respondemos a la brevedad.
-          </p>
-          <div class="cf-row">
-            <div class="cf-field">
-              <label for="cf-name" data-i18n="cf.name">Nombre</label>
-              <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required />
+      <!-- 8. Testimonios (module preserved from the previous site: quotes, names, roles and photos unchanged) -->
+      <section class="lp-section lp-section--white" id="testimonios" aria-labelledby="testimonios-title">
+        <div class="lp-container">
+          <div class="lp-head" style="margin-bottom: 3rem">
+            <h2 data-i18n="ui.6" class="lp-h2" id="testimonios-title">Testimonios</h2>
+          </div>
+          <div
+            class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 hide-scrollbar md:grid md:grid-cols-3 md:overflow-visible md:pb-0"
+          >
+            <!-- Testimonio 1 -->
+            <div
+              class="snap-center shrink-0 w-[85vw] md:w-auto md:shrink bg-surface rounded-[24px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] flex flex-col justify-between border border-surface-variant"
+            >
+              <div>
+                <svg class="text-primary/20 mb-4 block inline-block align-middle shrink-0" style="width:48px;height:48px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM362.5-517.5Q380-535 380-560t-17.5-42.5Q345-620 320-620t-42.5 17.5Q260-585 260-560t17.5 42.5Q295-500 320-500t42.5-17.5Zm360 0Q740-535 740-560t-17.5-42.5Q705-620 680-620t-42.5 17.5Q620-585 620-560t17.5 42.5Q655-500 680-500t42.5-17.5ZM680-560Zm-360 0Z"/></svg>
+                <p data-i18n="testimonios.1"
+                  class="italic font-body-md text-body-md text-on-surface-variant mb-6"
+                >
+                  "Mi experiencia con la consultora fue maravillosa. La amabilidad, el trato y la
+                  cordialidad de las personas que avalaron mi proceso, fue excelente. Solo palabras
+                  de agradecimiento a Lara Ponce y María Paula Lobos, que fueron fundamentales para
+                  lograr el objetivo."
+                </p>
+              </div>
+              <div class="flex items-center gap-4 pt-4 border-t border-surface-variant/50">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Adrián Lerner"
+                    src="/assets/testimonial-adrian.jpg"
+                  />
+                </div>
+                <div>
+                  <h3 class="font-semibold text-on-surface">Adrián Lerner</h3>
+                  <p data-i18n="testimonios.2" class="text-[12px] text-on-surface-variant">
+                    Proceso: cajero
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="cf-field">
-              <label for="cf-email" data-i18n="cf.email">Email</label>
-              <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="150" required />
+            <!-- Testimonio 2 -->
+            <div
+              class="snap-center shrink-0 w-[85vw] md:w-auto md:shrink bg-surface rounded-[24px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] flex flex-col justify-between border border-surface-variant"
+            >
+              <div>
+                <svg class="text-primary/20 mb-4 block inline-block align-middle shrink-0" style="width:48px;height:48px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM362.5-517.5Q380-535 380-560t-17.5-42.5Q345-620 320-620t-42.5 17.5Q260-585 260-560t17.5 42.5Q295-500 320-500t42.5-17.5Zm360 0Q740-535 740-560t-17.5-42.5Q705-620 680-620t-42.5 17.5Q620-585 620-560t17.5 42.5Q655-500 680-500t42.5-17.5ZM680-560Zm-360 0Z"/></svg>
+                <p data-i18n="testimonios.3"
+                  class="italic font-body-md text-body-md text-on-surface-variant mb-6"
+                >
+                  "Quería agradecer a LP consultora por acompañarme en este proceso de cambio
+                  laboral. Donde me sentí muy acompañado con consejos siempre con una mirada humana
+                  y estando al tanto de todos los pasos que fui dando y luego de mi inicio de este
+                  nuevo camino siguiendo en contacto con migo para ver cualquier necesidad que pueda
+                  tener. Muchas gracias."
+                </p>
+              </div>
+              <div class="flex items-center gap-4 pt-4 border-t border-surface-variant/50">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Matias Courroux"
+                    src="/assets/testimonial-matias.jpg"
+                  />
+                </div>
+                <div>
+                  <h3 class="font-semibold text-on-surface">Matias Courroux</h3>
+                  <p data-i18n="testimonios.4" class="text-[12px] text-on-surface-variant">
+                    Proceso: supervisor comercial
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonio 3 -->
+            <div
+              class="snap-center shrink-0 w-[85vw] md:w-auto md:shrink bg-surface rounded-[24px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] flex flex-col justify-between border border-surface-variant"
+            >
+              <div>
+                <svg class="text-primary/20 mb-4 block inline-block align-middle shrink-0" style="width:48px;height:48px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM362.5-517.5Q380-535 380-560t-17.5-42.5Q345-620 320-620t-42.5 17.5Q260-585 260-560t17.5 42.5Q295-500 320-500t42.5-17.5Zm360 0Q740-535 740-560t-17.5-42.5Q705-620 680-620t-42.5 17.5Q620-585 620-560t17.5 42.5Q655-500 680-500t42.5-17.5ZM680-560Zm-360 0Z"/></svg>
+                <p data-i18n="testimonios.5"
+                  class="italic font-body-md text-body-md text-on-surface-variant mb-6"
+                >
+                  "Gracias a los chicos de LP consultora pude conseguir el trabajo en donde estoy
+                  actualmente como ejecutivo de cuentas. Me acompañaron en todo el proceso de
+                  reclutamiento, incluso una vez pasado ese proceso me seguían escribiendo para
+                  saber cómo iba en el nuevo trabajo. Los súper recomiendo, son muy buenos
+                  profesionales y siempre comprometidos en acompañarte!"
+                </p>
+              </div>
+              <div class="flex items-center gap-4 pt-4 border-t border-surface-variant/50">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Denise Mafía"
+                    src="/assets/testimonial-denise.jpg"
+                  />
+                </div>
+                <div>
+                  <h3 class="font-semibold text-on-surface">Denise Mafía</h3>
+                  <p data-i18n="testimonios.6" class="text-[12px] text-on-surface-variant">
+                    Proceso: ejecutivo de cuentas
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="cf-row">
-            <div class="cf-field">
-              <label for="cf-phone" data-i18n="cf.phone">Teléfono (opcional)</label>
-              <input id="cf-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" />
+        </div>
+      </section>
+
+      <!-- 9. Oportunidades laborales -->
+      <section class="lp-section lp-section--alt" id="oportunidades" aria-labelledby="oportunidades-title">
+        <div class="lp-container">
+          <div class="lp-jobs">
+            <h2 data-i18n="oportunidades.1" class="lp-h2" id="oportunidades-title">Tu próximo desafío profesional puede estar más cerca.</h2>
+            <p data-i18n="oportunidades.2" class="lp-lead">
+              Acompañamos a las personas durante sus procesos de búsqueda y cambio laboral,
+              promoviendo experiencias de selección respetuosas, claras y cercanas.
+            </p>
+            <div class="lp-actions">
+              <a data-i18n-html="oportunidades.3"
+                class="lp-btn lp-btn--primary"
+                href="https://lpconsultora.trackandhire.com/"
+                target="_blank"
+                rel="noopener"
+                >Ver oportunidades laborales<span class="lp-sr"> (se abre en una pestaña nueva)</span></a
+              >
+              <a data-i18n-html="oportunidades.4"
+                class="lp-btn lp-btn--secondary"
+                href="https://lpconsultora.trackandhire.com/jobs/114/apply"
+                target="_blank"
+                rel="noopener"
+                >Cargá tu CV<span class="lp-sr"> (se abre en una pestaña nueva)</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Contacto -->
+      <section class="lp-section" id="contacto" aria-labelledby="contacto-title">
+        <div class="lp-contact-grid">
+          <div class="lp-contact-info">
+            <h2 data-i18n="contacto.1" class="lp-h2 lp-h2--left" id="contacto-title">Conversemos sobre los desafíos de tu organización.</h2>
+            <p data-i18n="contacto.2" class="lp-lead">
+              Cada empresa tiene necesidades diferentes. Contanos qué estás buscando y pensemos juntos
+              cómo podemos acompañarte.
+            </p>
+            <div class="lp-actions">
+              <a
+                class="lp-btn lp-btn--primary"
+                href="https://wa.me/543512411979"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg width="22" height="22" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                <span data-i18n-html="contacto.3">Hablemos por WhatsApp<span class="lp-sr"> (se abre en una pestaña nueva)</span></span>
+              </a>
+            </div>
+            <ul class="lp-details">
+              <li>
+                <strong data-i18n="contacto.4">Correo:</strong>
+                <a href="mailto:lara@lp-consultora.com">lara@lp-consultora.com</a>
+              </li>
+              <li>
+                <strong>WhatsApp:</strong>
+                <a href="https://wa.me/543512411979" target="_blank" rel="noopener">+54 351 241-1979</a>
+              </li>
+              <li><strong data-i18n="contacto.5">Ubicación:</strong> <span>Córdoba, Argentina</span></li>
+              <li>
+                <strong>Instagram:</strong>
+                <a href="https://www.instagram.com/lpconsultora.cba/" target="_blank" rel="noopener">@lpconsultora.cba</a>
+              </li>
+              <li>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/company/lp-consultora/?originalSubdomain=ar" target="_blank" rel="noopener">lp-consultora</a>
+              </li>
+              <li>
+                <strong>Facebook:</strong>
+                <a href="https://www.facebook.com/people/LP-Consultora/100070749852794/" target="_blank" rel="noopener">LP Consultora</a>
+              </li>
+              <li>
+                <strong data-i18n="contacto.6">Web:</strong>
+                <a href="https://www.lp-consultora.com">www.lp-consultora.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact form (handled by /contact.php) -->
+          <form id="contactForm" class="cf" action="/contact.php" method="post">
+            <div class="cf-row">
+              <div class="cf-field">
+                <label data-i18n="contacto.7" for="cf-name">Nombre</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required />
+              </div>
+              <div class="cf-field">
+                <label data-i18n="contacto.8" for="cf-company">Empresa (opcional)</label>
+                <input id="cf-company" name="company" type="text" autocomplete="organization" maxlength="120" />
+              </div>
+            </div>
+            <div class="cf-row">
+              <div class="cf-field">
+                <label data-i18n="contacto.9" for="cf-email">Correo electrónico</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="150" required />
+              </div>
+              <div class="cf-field">
+                <label data-i18n="contacto.10" for="cf-phone">Teléfono (opcional)</label>
+                <input id="cf-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" />
+              </div>
             </div>
             <div class="cf-field">
-              <label for="cf-topic" data-i18n="cf.topic">Motivo de la consulta</label>
-              <select id="cf-topic" name="topic" required>
-                <option value="company" data-i18n="cf.topic.company">Empresa que busca talento</option>
-                <option value="candidate" data-i18n="cf.topic.candidate">Candidato/a</option>
-                <option value="other" data-i18n="cf.topic.other">Otra consulta</option>
+              <label data-i18n="contacto.11" for="cf-service">Servicio de interés</label>
+              <select id="cf-service" name="service">
+                <option data-i18n="contacto.12" value="">Seleccioná una opción</option>
+                <option data-i18n="contacto.13" value="seleccion">Selección de personal</option>
+                <option data-i18n="servicios.6" value="psicotecnicas">Evaluaciones psicotécnicas</option>
+                <option data-i18n="servicios.9" value="mapeo">Mapeo de talentos y potencial</option>
+                <option data-i18n="servicios.12" value="assessment">Assessment Center</option>
+                <option data-i18n="servicios.15" value="consultoria">Consultoría organizacional</option>
+                <option data-i18n="servicios.18" value="talleres">Talleres y desarrollo de equipos</option>
+                <option data-i18n="contacto.14" value="otra">Otra consulta</option>
               </select>
             </div>
-          </div>
-          <div class="cf-field">
-            <label for="cf-message" data-i18n="cf.message">Mensaje</label>
-            <textarea id="cf-message" name="message" rows="5" minlength="5" maxlength="3000" required></textarea>
-          </div>
-          <!-- Honeypot: hidden from people, bots fill it in -->
-          <div class="cf-hp" aria-hidden="true">
-            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
-          </div>
-          <label class="cf-consent">
-            <input type="checkbox" name="consent" value="1" required />
-            <span data-i18n="cf.consent">Acepto que LP Consultora use estos datos para responder mi consulta.</span>
-          </label>
-          <button type="submit" class="cf-submit" id="cfSubmit" data-i18n="cf.send">Enviar consulta</button>
-          <p id="cfStatus" class="cf-status" role="status" aria-live="polite"></p>
-          <noscript>
-            <p class="cf-status cf-status--error">
-              Activá JavaScript para usar el formulario o escribinos a
-              <a href="mailto:lara@lp-consultora.com">lara@lp-consultora.com</a>.
-            </p>
-          </noscript>
-        </form>
-        <!-- Contact icons -->
-        <div class="flex gap-4">
-          <a
-            class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-primary-container transition-colors"
-            href="https://wa.me/543512411979"
-            target="_blank"
-            rel="noopener"
-            aria-label="WhatsApp"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
-          </a>
-          <a
-            class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-primary-container transition-colors"
-            href="mailto:lara@lp-consultora.com"
-            aria-label="Mail"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-          </a>
-          <a
-            class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-primary-container transition-colors"
-            href="https://www.linkedin.com/company/lp-consultora/?originalSubdomain=ar"
-            target="_blank"
-            rel="noopener"
-            aria-label="LinkedIn"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"/></svg>
-          </a>
-          <a
-            class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-primary-container transition-colors"
-            href="https://www.instagram.com/lpconsultora.cba/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Instagram"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg>
-          </a>
-          <a
-            class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-primary-container transition-colors"
-            href="https://www.facebook.com/people/LP-Consultora/100070749852794/"
-            target="_blank"
-            rel="noopener"
-            aria-label="Facebook"
-          >
-            <svg class="inline-block align-middle shrink-0" style="width:24px;height:24px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/></svg>
-          </a>
+            <div class="cf-field">
+              <label data-i18n="contacto.15" for="cf-message">Mensaje</label>
+              <textarea id="cf-message" name="message" rows="5" minlength="5" maxlength="3000" required></textarea>
+            </div>
+            <!-- Anti-spam honeypot: invisible and unreachable for people (name is checked by contact.php) -->
+            <div class="cf-hp" aria-hidden="true">
+              <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            </div>
+            <label class="cf-consent">
+              <input type="checkbox" name="consent" value="1" required />
+              <span data-i18n="contacto.16">Acepto que LP Consultora use estos datos para responder mi consulta.</span>
+            </label>
+            <button data-i18n="contacto.17" type="submit" class="cf-submit" id="cfSubmit">Enviar consulta</button>
+            <p id="cfStatus" class="cf-status" role="status" aria-live="polite"></p>
+            <noscript>
+              <p class="cf-status cf-status--error">
+                Activá JavaScript para usar el formulario o escribinos a
+                <a href="mailto:lara@lp-consultora.com">lara@lp-consultora.com</a>.
+              </p>
+            </noscript>
+          </form>
         </div>
-        <!-- Contact details (original copy) -->
-        <ul class="flex flex-col gap-2 text-on-surface-variant">
-          <li>
-            Whatsapp:
-            <a
-              class="hover:text-primary transition-colors"
-              href="https://wa.me/543512411979"
-              target="_blank"
-              rel="noopener"
-              >+54 351 241-1979</a
-            >
-          </li>
-          <li>
-            Mail:
-            <a class="hover:text-primary transition-colors" href="mailto:lara@lp-consultora.com"
-              >lara@lp-consultora.com</a
-            >
-          </li>
-          <li>
-            LinkedIn:
-            <a
-              class="hover:text-primary transition-colors"
-              href="https://www.linkedin.com/company/lp-consultora/?originalSubdomain=ar"
-              target="_blank"
-              rel="noopener"
-              >lp-consultora</a
-            >
-          </li>
-          <li>
-            Instagram:
-            <a
-              class="hover:text-primary transition-colors"
-              href="https://www.instagram.com/lpconsultora.cba/"
-              target="_blank"
-              rel="noopener"
-              >lpconsultora.cba</a
-            >
-          </li>
-          <li>
-            Facebook:
-            <a
-              class="hover:text-primary transition-colors"
-              href="https://www.facebook.com/people/LP-Consultora/100070749852794/"
-              target="_blank"
-              rel="noopener"
-              >LP Consultora</a
-            >
-          </li>
-          <li data-i18n="footer.loc">Ubicación: Cordoba, Argentina.</li>
-        </ul>
-        <!-- Map location placeholder -->
-        <div class="w-full max-w-md h-32 rounded-2xl bg-surface-container-high overflow-hidden relative">
-          <div
-            class="w-full h-full bg-cover bg-center"
-            role="img"
-            aria-label="Mapa de ubicación de la oficina"
-            style="
-              background-image: url('/assets/map.png');
-            "
-          ></div>
-          <div class="absolute inset-0 flex items-center justify-center bg-surface/30 backdrop-blur-[1px]">
-            <span
-              class="bg-surface px-4 py-2 rounded-full font-label-caps text-label-caps shadow-sm text-on-surface flex items-center gap-2"
-            >
-              <svg class="inline-block align-middle shrink-0" style="width:16px;height:16px" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-              <span data-i18n="map.pill">Cordoba, Argentina</span>
-            </span>
-          </div>
-        </div>
-        <div class="flex flex-wrap justify-center gap-6 w-full">
-          <a
-            class="text-on-surface-variant dark:text-outline-variant hover:text-tertiary transition-colors opacity-90 active:opacity-100"
-            href="#"
-            data-i18n="footer.privacy"
-            >Privacidad</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline-variant hover:text-tertiary transition-colors opacity-90 active:opacity-100"
-            href="#"
-            data-i18n="footer.terms"
-            >Términos de Uso</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline-variant hover:text-tertiary transition-colors opacity-90 active:opacity-100"
-            href="https://www.linkedin.com/company/lp-consultora/?originalSubdomain=ar"
-            target="_blank"
-            rel="noopener"
-            >LinkedIn</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline-variant hover:text-tertiary transition-colors opacity-90 active:opacity-100"
-            href="https://www.instagram.com/lpconsultora.cba/"
-            target="_blank"
-            rel="noopener"
-            >Instagram</a
-          >
-        </div>
-        <div class="w-full h-[1px] bg-surface-variant"></div>
-        <p class="text-on-surface-variant text-[14px]" data-i18n="footer.copy">
-          © 2026 LP Consultora. Todos los derechos reservados.
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="lp-footer">
+      <div class="lp-footer-inner">
+        <img data-i18n-alt="aria.4" src="/assets/logo%20LP-final-02%201-8ff22ebb.svg" alt="LP Consultora — Personas que impulsan organizaciones." />
+        <p data-i18n="ui.10" class="lp-footer-slogan">LP Consultora · Personas que impulsan organizaciones.</p>
+        <p data-i18n="ui.11">
+          Selección de personal · Evaluaciones psicolaborales · Desarrollo de talento · Consultoría
+          organizacional · Talleres para equipos
         </p>
+        <p>
+          Córdoba, Argentina ·
+          <a href="mailto:lara@lp-consultora.com" style="color: inherit">lara@lp-consultora.com</a> ·
+          <a href="https://wa.me/543512411979" target="_blank" rel="noopener" style="color: inherit">+54 351 241-1979</a>
+        </p>
+        <nav data-i18n-aria="aria.8" class="lp-footer-links" aria-label="Legales y redes">
+          <a data-i18n="ui.12" href="#">Privacidad</a>
+          <a data-i18n="ui.13" href="#">Términos de Uso</a>
+          <a href="https://www.linkedin.com/company/lp-consultora/?originalSubdomain=ar" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/lpconsultora.cba/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/people/LP-Consultora/100070749852794/" target="_blank" rel="noopener">Facebook</a>
+        </nav>
+        <hr />
+        <small data-i18n-html="ui.14">© <span id="year">2026</span> LP Consultora. Todos los derechos reservados.</small>
       </div>
     </footer>
 
+    <!-- Floating WhatsApp: persistent but unobtrusive (icon only on mobile, hides over the contact section) -->
+    <a data-i18n-aria="aria.9"
+      class="lp-wa"
+      id="waFloat"
+      href="https://wa.me/543512411979"
+      target="_blank"
+      rel="noopener"
+      aria-label="Escribinos por WhatsApp (se abre en una pestaña nueva)"
+    >
+      <svg width="24" height="24" fill="currentColor" viewBox="0 -960 960 960" aria-hidden="true" focusable="false"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+      <span class="lp-wa-label" aria-hidden="true">WhatsApp</span>
+    </a>
+
     <script>
-      // Navigation drawer
-      const menuBtn = document.getElementById("menuBtn");
-      const closeBtn = document.getElementById("closeDrawerBtn");
-      const drawer = document.getElementById("navigationDrawer");
-      const drawerContent = document.getElementById("drawerContent");
+      // ---- Mobile drawer (with focus management) ----
+      (function () {
+        const menuBtn = document.getElementById("menuBtn");
+        const closeBtn = document.getElementById("closeDrawerBtn");
+        const drawer = document.getElementById("navigationDrawer");
+        const panel = document.getElementById("drawerContent");
+        let closing = null;
 
-      function openDrawer() {
-        drawer.classList.remove("hidden");
-        // Small delay so display:block applies before animating the transform
-        setTimeout(() => {
-          drawer.classList.remove("opacity-0");
-          drawerContent.classList.remove("-translate-x-full");
-        }, 10);
-      }
-
-      function closeDrawer() {
-        drawerContent.classList.add("-translate-x-full");
-        drawer.classList.add("opacity-0");
-        setTimeout(() => {
-          drawer.classList.add("hidden");
-        }, 300); // match transition duration
-      }
-
-      menuBtn.addEventListener("click", openDrawer);
-      closeBtn.addEventListener("click", closeDrawer);
-
-      // Close on clicking the scrim
-      drawer.addEventListener("click", (e) => {
-        if (e.target === drawer) {
-          closeDrawer();
+        function openDrawer() {
+          clearTimeout(closing);
+          drawer.hidden = false;
+          requestAnimationFrame(() => drawer.classList.add("is-open"));
+          menuBtn.setAttribute("aria-expanded", "true");
+          closeBtn.focus();
         }
-      });
-
-      // Close on Escape
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && !drawer.classList.contains("hidden")) {
-          closeDrawer();
+        function closeDrawer(returnFocus) {
+          drawer.classList.remove("is-open");
+          menuBtn.setAttribute("aria-expanded", "false");
+          closing = setTimeout(() => {
+            drawer.hidden = true;
+          }, 260);
+          if (returnFocus) menuBtn.focus();
         }
-      });
 
-      // Close drawer on link click for smooth anchor scrolling
-      drawer.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", closeDrawer);
-      });
+        menuBtn.addEventListener("click", openDrawer);
+        closeBtn.addEventListener("click", () => closeDrawer(true));
+        drawer.addEventListener("click", (e) => {
+          if (e.target === drawer) closeDrawer(true);
+        });
+        panel.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => closeDrawer(false)));
+        document.addEventListener("keydown", (e) => {
+          if (drawer.hidden) return;
+          if (e.key === "Escape") return closeDrawer(true);
+          if (e.key === "Tab") {
+            const f = panel.querySelectorAll("a[href], button");
+            const first = f[0];
+            const last = f[f.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+              e.preventDefault();
+              last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+              e.preventDefault();
+              first.focus();
+            }
+          }
+        });
+      })();
 
-      // ---- i18n (Spanish / English) ----
-      // Spanish is the in-HTML default (served to no-JS clients and crawlers);
-      // this dictionary drives client-side switching + auto-detection.
-      const I18N = {
+      // ---- Language (Spanish is the markup default; English is applied client-side) ----
+      const EN = {
+        "ui.1": "Skip to content",
+        "ui.2": "Home",
+        "ui.3": "About us",
+        "ui.4": "Services",
+        "ui.5": "Clients",
+        "ui.6": "Testimonials",
+        "ui.7": "Job opportunities",
+        "ui.8": "Contact",
+        "ui.9": "Let's talk about your business",
+        "inicio.1": "LP CONSULTORA | PEOPLE MANAGEMENT AND ORGANIZATIONAL DEVELOPMENT",
+        "inicio.2": "People who <span class=\"brand-gradient-text\">drive</span> organizations.",
+        "inicio.3": "We support companies in the selection, assessment and development of talent, the strengthening of their teams, and the improvement of their structures and work processes.",
+        "inicio.4": "We combine knowledge from Psychology, professional experience and a close, personal approach to deliver solutions tailored to the needs of each organization.",
+        "inicio.5": "Discover our services",
+        "ayuda.1": "Every organization has its own challenges. We help you address them.",
+        "ayuda.2": "Do you need to bring in talent?",
+        "ayuda.3": "We identify and assess candidates who fit your company's needs and its work culture.",
+        "ayuda.4": "Recruitment and selection <span aria-hidden=\"true\">→</span>",
+        "ayuda.5": "Do you want to make hiring decisions with more information?",
+        "ayuda.6": "We carry out psychometric assessments to understand each candidate's resources, strengths and fit.",
+        "ayuda.7": "Psychometric assessments <span aria-hidden=\"true\">→</span>",
+        "ayuda.8": "Do you want to identify and develop your team's potential?",
+        "ayuda.9": "We assess capabilities and competencies to support promotion, development and succession decisions.",
+        "ayuda.10": "Talent and potential mapping and Assessment Center <span aria-hidden=\"true\">→</span>",
+        "ayuda.11": "Do you need to strengthen relationships and teamwork?",
+        "ayuda.12": "We design participatory workshops to develop communication, leadership and collaboration.",
+        "ayuda.13": "Team workshops <span aria-hidden=\"true\">→</span>",
+        "ayuda.14": "Is your company growing and in need of better organization?",
+        "ayuda.15": "We help you define roles, organize processes and strengthen how your organization works.",
+        "ayuda.16": "Organizational consulting <span aria-hidden=\"true\">→</span>",
+        "servicios.1": "Solutions that support your company's growth.",
+        "servicios.2": "Recruitment and personnel selection",
+        "servicios.3": "The talent your company needs, closer to you.",
+        "servicios.4": "We support comprehensive recruitment and selection processes, from needs assessment and profile definition through to the identification, assessment and presentation of candidates. We combine interviews, technology resources and a professional perspective that considers both the required competencies and each organization's culture. We have experience with sales, administrative, hospitality, industrial, professional and technology profiles.",
+        "servicios.5": "Ask us about this service <span aria-hidden=\"true\">→</span>",
+        "servicios.6": "Psychometric assessments",
+        "servicios.7": "Hiring decisions backed by stronger professional support.",
+        "servicios.8": "We conduct occupational psychological assessments through interviews and psychological techniques, aimed at understanding each candidate's personal resources, working styles and fit for the position. We produce reports with strengths, development opportunities and recommendations that support hiring decisions and the integration process into the company.",
+        "servicios.9": "Talent and potential mapping",
+        "servicios.10": "We recognize the potential that drives growth.",
+        "servicios.11": "We assess people's development potential to support decisions on promotion, career plans and succession. Through specialized tools, including the Elliott Jaques approach, we provide information to identify capabilities and project growth opportunities within the organization.",
+        "servicios.12": "Assessment Center",
+        "servicios.13": "We observe competencies in action.",
+        "servicios.14": "We design individual and group assessment exercises based on situations related to the work context. These activities make it possible to observe key competencies such as leadership, communication, teamwork, commercial orientation and problem solving. A methodology that complements selection, promotion and development processes.",
+        "servicios.15": "Organizational consulting",
+        "servicios.16": "When your company grows, its organization needs to evolve too.",
+        "servicios.17": "We carry out organizational diagnoses and design interventions adapted to the reality of each company. We work on structures, organizational charts, job definitions, responsibilities, processes, internal policies, culture, climate and work dynamics. We support the implementation of improvements that bring clarity, coordination and sustainability.",
+        "servicios.18": "Workshops and team development",
+        "servicios.19": "Better relationships. Better ways of working.",
+        "servicios.20": "We design and facilitate tailor-made group workshops to strengthen assertive communication, active listening, leadership, teamwork and emotional management. We use participatory approaches and practical exercises that encourage reflection and make it possible to bring what was learned into everyday work.",
+        "aria.photo": "Lara Ponce, founder and director of LP Consultora",
+        "quienes_somos.f1": "Lara Ponce",
+        "quienes_somos.f2": "Founder and Director of LP Consultora",
+        "quienes_somos.f3": "Licensed Psychologist, with specialized training in Human Resources, Psychodiagnosis, and Work and Organizational Psychology.",
+        "quienes_somos.f4": "She has experience in people management, recruitment and selection, talent assessment and organizational development, supporting companies from different sectors with their challenges in hiring, development and team management.",
+        "quienes_somos.f5": "As founder and director of LP Consultora, she leads the company's strategy and business development, coordinates projects and works alongside a team of Psychology professionals, bringing together different perspectives to deliver solutions adapted to each organization's needs.",
+        "quienes_somos.f6": "Her professional approach combines the knowledge of Psychology with a practical view of how companies work, prioritizing closeness, collaborative work and the building of trusting relationships.",
+        "quienes_somos.f7": "She believes in people's potential as an engine of growth and in the importance of building organizations where human development and business goals can move forward together.",
+        "quienes_somos.1": "We know people. We understand organizations.",
+        "quienes_somos.2": "At LP Consultora we are a team of Psychology professionals specialized in people management and organizational development.",
+        "quienes_somos.3": "We work alongside companies from different sectors, supporting them in their challenges around talent selection, assessment and development, as well as in strengthening their teams, structures and organizational processes.",
+        "quienes_somos.4": "We believe every organization has its own identity, culture and particular way of working. That is why we take the time to learn about its reality, understand its needs and design proposals that can be put into practice.",
+        "quienes_somos.5": "Our way of working combines technical knowledge, experience, closeness and collaboration, building relationships of trust that allow us to support our clients through the different stages of their growth.",
+        "mision_vision_valores.1": "Our mission",
+        "mision_vision_valores.2": "To drive the growth of organizations through people, supporting talent selection and development, the strengthening of teams and the improvement of organizational processes, with a professional, close and collaborative approach.",
+        "mision_vision_valores.3": "Our vision",
+        "mision_vision_valores.4": "To be a leading consultancy in people management and organizational development, recognized for its professionalism, closeness and ability to understand each company's needs.",
+        "mision_vision_valores.5": "We aspire to build relationships of trust and support organizations as they evolve, fostering work environments where people can develop their potential and contribute to collective growth.",
+        "mision_vision_valores.6": "Our values",
+        "mision_vision_valores.7": "Closeness and commitment",
+        "mision_vision_valores.8": "We build relationships based on trust, listening and commitment. We take the time to understand each organization's needs and support its challenges responsibly.",
+        "mision_vision_valores.9": "Professionalism and ethics",
+        "mision_vision_valores.10": "We work with technical rigor, confidentiality and respect for people, grounding our interventions in specialized knowledge and responsible professional practice.",
+        "mision_vision_valores.11": "Collaborative work",
+        "mision_vision_valores.12": "We believe in the value of building together. We bring together different professional perspectives and promote dialogue, participation and cooperation.",
+        "mision_vision_valores.13": "Flexibility and continuous improvement",
+        "mision_vision_valores.14": "We recognize that every organization has its own needs and characteristics. We adapt our proposals and review our practices to offer ever more effective solutions.",
+        "mision_vision_valores.15": "People development",
+        "mision_vision_valores.16": "We recognize people's potential as an engine of growth and transformation. We promote opportunities to strengthen capabilities, develop teams and contribute to organizational growth.",
+        "como_trabajamos.1": "We listen, we understand, we support.",
+        "como_trabajamos.2": "<span class=\"lp-sr\">Step 1: </span>We get to know your organization",
+        "como_trabajamos.3": "We take the time to understand its context, its needs and its goals.",
+        "como_trabajamos.4": "<span class=\"lp-sr\">Step 2: </span>We design tailor-made proposals",
+        "como_trabajamos.5": "We integrate specialized tools and knowledge to develop solutions adapted to each situation.",
+        "como_trabajamos.6": "<span class=\"lp-sr\">Step 3: </span>We work alongside your team",
+        "como_trabajamos.7": "We carry out the agreed actions, encouraging participation and collaborative work.",
+        "como_trabajamos.8": "<span class=\"lp-sr\">Step 4: </span>We support improvement processes",
+        "como_trabajamos.9": "We follow up, share recommendations and help consolidate progress.",
+        "como_trabajamos.10": "Find out how we can support your company",
+        "clientes.1": "Trusted by",
+        "testimonios.1": "\"My experience with the consultancy was wonderful. The kindness, care and warmth of the people who supported my process were excellent. Only words of gratitude to Lara Ponce and María Paula Lobos, who were essential to achieving the goal.\"",
+        "testimonios.2": "Process: cashier",
+        "testimonios.3": "\"I want to thank LP Consultora for supporting me through this career change. I felt truly accompanied, always with advice and a human perspective, kept aware of every step I took; and after starting this new path they stayed in touch to address any need I might have. Thank you so much.\"",
+        "testimonios.4": "Process: sales supervisor",
+        "testimonios.5": "\"Thanks to the team at LP Consultora I landed the job I currently hold as an account executive. They supported me throughout the entire recruitment process, and even after it ended they kept writing to see how I was doing in the new job. I highly recommend them — they are excellent professionals, always committed to supporting you!\"",
+        "testimonios.6": "Process: account executive",
+        "oportunidades.1": "Your next professional challenge may be closer than you think.",
+        "oportunidades.2": "We support people through their job search and career change processes, promoting selection experiences that are respectful, clear and personal.",
+        "oportunidades.3": "View job opportunities<span class=\"lp-sr\"> (opens in a new tab)</span>",
+        "oportunidades.4": "Upload your CV<span class=\"lp-sr\"> (opens in a new tab)</span>",
+        "contacto.1": "Let's talk about the challenges of your organization.",
+        "contacto.2": "Every company has different needs. Tell us what you are looking for and let's think together about how we can support you.",
+        "contacto.3": "Let's talk on WhatsApp<span class=\"lp-sr\"> (opens in a new tab)</span>",
+        "contacto.4": "Email:",
+        "contacto.5": "Location:",
+        "contacto.6": "Website:",
+        "contacto.7": "Name",
+        "contacto.8": "Company (optional)",
+        "contacto.9": "Email",
+        "contacto.10": "Phone (optional)",
+        "contacto.11": "Service of interest",
+        "contacto.12": "Select an option",
+        "contacto.13": "Personnel selection",
+        "contacto.14": "Other inquiry",
+        "contacto.15": "Message",
+        "contacto.16": "I agree that LP Consultora may use this data to reply to my inquiry.",
+        "contacto.17": "Send message",
+        "ui.10": "LP Consultora · People who drive organizations.",
+        "ui.11": "Personnel selection · Occupational psychological assessments · Talent development · Organizational consulting · Team workshops",
+        "ui.12": "Privacy",
+        "ui.13": "Terms of Use",
+        "ui.14": "© <span id=\"year\">2026</span> LP Consultora. All rights reserved.",
+        "aria.1": "Main menu",
+        "aria.2": "Close menu",
+        "aria.3": "Main (mobile)",
+        "aria.4": "LP Consultora — People who drive organizations.",
+        "aria.5": "Main",
+        "aria.6": "Open menu",
+        "aria.7": "Mission, vision and values",
+        "aria.8": "Legal and social",
+        "aria.9": "Message us on WhatsApp (opens in a new tab)"
+      };
+      const EN_META = {
+        "title": "LP Consultora | Personnel selection and organizational development in Córdoba",
+        "desc": "We support companies with personnel selection, psychometric assessments, talent development and organizational consulting. Get to know LP Consultora.",
+        "twdesc": "We support companies with personnel selection, psychometric assessments, talent development and organizational consulting.",
+        "imgalt": "LP Consultora — People who drive organizations."
+      };
+      const MSG = {
         es: {
-          "drawer.sub": "Talento Humano",
-          "aria.openMenu": "Abrir menú",
-          "aria.closeMenu": "Cerrar menú",
-          "nav.home": "Inicio",
-          "nav.about": "Nosotros",
-          "nav.join": "Sumate",
-          "nav.services": "Servicios",
-          "nav.testimonials": "Testimonios",
-          "nav.contact": "Contacto",
-          "hero.title":
-            'Especialistas en la <span class="brand-gradient-text">selección</span> y gestión de talento.',
-          "hero.sub":
-            "Conectamos el mejor talento con las empresas líderes, potenciando el crecimiento humano y organizacional.",
-          "hero.more": "Conocé más",
-          "cta.cv": "Cargá tu CV",
-          "cta.jobs": "Ofertas laborales",
-          "about.h": "Quiénes somos",
-          "about.p1":
-            "Somos un equipo de profesionales formados en RRHH y psicología, que compartimos los mismos valores a la hora de trabajar: buscamos que el encuentro de -al menos dos- se produzca en un marco de respeto y confianza mutua. Para ello, nos formamos de manera constante y comprometida, para alcanzar las mejores prácticas.",
-          "about.p2":
-            "Trabajamos con empresas nacionales e internacionales, seleccionando talentos de comercio e industria y del mundo IT.",
-          "join.h": "Sumate",
-          "join.sub": "Descubrí las oportunidades que tenemos para vos.",
-          "join.cv.h": "Dejanos tu CV",
-          "join.cv.p": "Formá parte de nuestra base de datos para futuras búsquedas.",
-          "join.jobs.h": "Búsquedas Activas",
-          "join.jobs.p": "Explorá las oportunidades laborales actuales en empresas líderes.",
-          "svc.h": "Nuestros Servicios",
-          "svc.1.h": "Selección de personal",
-          "svc.1.p":
-            "Realizamos procesos de selección end to end, comprometidos con ambas partes, la empresa y los candidatos, futuros colaboradores. Brindamos soluciones a las necesidades de las empresas por medio de un trabajo de relevamiento detallista y comprometido, como paso previo a su inicio, a fines de obtener resultados satisfactorios en el menor tiempo posible y con el mayor impacto positivo para la resolución del proceso. Procuramos que el proceso de selección sea una experiencia amena e -incluso- de crecimiento y aprendizaje para las personas que participan en el. Para ello, brindamos un acompañamiento cercano, empático y comprometido a los candidatos.",
-          "svc.2.h": "Consultoría en RRHH",
-          "svc.2.p":
-            "Realizamos procesos de diagnóstico organizacional que nos permita proponer acciones de mejoras en los procesos evaluados.",
-          "svc.3.h": "Evaluaciones psicotécnicas",
-          "svc.3.p":
-            "Realizamos evaluaciones con técnicas y tests psicológicos que nos ayuden a conocer y definir el grado de desarrollo de las competencias requeridas para cada posición y la adecuación del candidato evaluado para con el puesto en cuestión. Evaluaciones de potencial a partir de la teoría de Elliot Jacques, a fines de conocer el grado de competencias y habilidades de los candidatos, a fines de determinar su potencial para desarrollarse en puestos de mayor jerarquía y responsabilidad.",
-          "test.h": "Testimonios",
-          "test.1.q":
-            '"Mi experiencia con la consultora fue maravillosa. La amabilidad, el trato y la cordialidad de las personas que avalaron mi proceso, fue excelente. Solo palabras de agradecimiento a Lara Ponce y María Paula Lobos, que fueron fundamentales para lograr el objetivo."',
-          "test.1.r": "Proceso: cajero",
-          "test.2.q":
-            '"Quería agradecer a LP consultora por acompañarme en este proceso de cambio laboral. Donde me sentí muy acompañado con consejos siempre con una mirada humana y estando al tanto de todos los pasos que fui dando y luego de mi inicio de este nuevo camino siguiendo en contacto con migo para ver cualquier necesidad que pueda tener. Muchas gracias."',
-          "test.2.r": "Proceso: supervisor comercial",
-          "test.3.q":
-            '"Gracias a los chicos de LP consultora pude conseguir el trabajo en donde estoy actualmente como ejecutivo de cuentas. Me acompañaron en todo el proceso de reclutamiento, incluso una vez pasado ese proceso me seguían escribiendo para saber cómo iba en el nuevo trabajo. Los súper recomiendo, son muy buenos profesionales y siempre comprometidos en acompañarte!"',
-          "test.3.r": "Proceso: ejecutivo de cuentas",
-          "clients.h": "Confían en nosotros",
-          "bnav.home": "Inicio",
-          "bnav.cv": "CV",
-          "bnav.jobs": "Ofertas",
-          "bnav.contact": "Contacto",
-          "footer.tagline": "Especialistas en la selección y gestión de talento humano.",
-          "footer.contact": "Contacto",
-          "cf.intro": "Contanos qué necesitás y te respondemos a la brevedad.",
-          "cf.name": "Nombre",
-          "cf.email": "Email",
-          "cf.phone": "Teléfono (opcional)",
-          "cf.topic": "Motivo de la consulta",
-          "cf.topic.company": "Empresa que busca talento",
-          "cf.topic.candidate": "Candidato/a",
-          "cf.topic.other": "Otra consulta",
-          "cf.message": "Mensaje",
-          "cf.consent": "Acepto que LP Consultora use estos datos para responder mi consulta.",
-          "cf.send": "Enviar consulta",
-          "cf.sending": "Enviando…",
-          "cf.ok": "¡Gracias! Recibimos tu consulta y te responderemos pronto.",
-          "cf.err.invalid": "Revisá los datos del formulario e intentá de nuevo.",
-          "cf.err.rate": "Enviaste varias consultas seguidas. Probá de nuevo más tarde.",
-          "cf.err.server": "No pudimos enviar tu consulta. Escribinos a lara@lp-consultora.com.",
-          "footer.loc": "Ubicación: Cordoba, Argentina.",
-          "map.pill": "Cordoba, Argentina",
-          "footer.privacy": "Privacidad",
-          "footer.terms": "Términos de Uso",
-          "footer.copy": "© 2026 LP Consultora. Todos los derechos reservados.",
-          "meta.title": "Selección de Personal y Consultoría en RRHH | LP Consultora",
-          "meta.desc":
-            "Consultora de Recursos Humanos en Córdoba, Argentina. Especialistas en selección de personal, consultoría en RRHH y evaluaciones psicotécnicas para empresas nacionales e internacionales.",
+          sending: "Enviando…",
+          send: "Enviar consulta",
+          ok: "¡Gracias! Recibimos tu consulta y te responderemos pronto.",
+          invalid: "Revisá los datos del formulario e intentá de nuevo.",
+          rate: "Enviaste varias consultas seguidas. Probá de nuevo más tarde.",
+          server: "No pudimos enviar tu consulta. Escribinos a lara@lp-consultora.com.",
         },
         en: {
-          "drawer.sub": "Human Talent",
-          "aria.openMenu": "Open menu",
-          "aria.closeMenu": "Close menu",
-          "nav.home": "Home",
-          "nav.about": "About",
-          "nav.join": "Join us",
-          "nav.services": "Services",
-          "nav.testimonials": "Testimonials",
-          "nav.contact": "Contact",
-          "hero.title":
-            'Specialists in talent <span class="brand-gradient-text">selection</span> and management.',
-          "hero.sub":
-            "We connect the best talent with leading companies, driving human and organizational growth.",
-          "hero.more": "Learn more",
-          "cta.cv": "Upload your CV",
-          "cta.jobs": "Job openings",
-          "about.h": "About us",
-          "about.p1":
-            "We are a team of professionals trained in HR and psychology who share the same values at work: we seek that the encounter between —at least two— people takes place within a framework of mutual respect and trust. To that end, we train ourselves constantly and with commitment, to reach best practices.",
-          "about.p2":
-            "We work with national and international companies, sourcing talent across commerce, industry and the IT world.",
-          "join.h": "Join us",
-          "join.sub": "Discover the opportunities we have for you.",
-          "join.cv.h": "Leave us your CV",
-          "join.cv.p": "Become part of our database for future searches.",
-          "join.jobs.h": "Active Searches",
-          "join.jobs.p": "Explore current job opportunities at leading companies.",
-          "svc.h": "Our Services",
-          "svc.1.h": "Recruitment & Selection",
-          "svc.1.p":
-            "We run end-to-end recruitment processes, committed to both parties —the company and the candidates, future team members. We provide solutions to companies' needs through detailed, committed groundwork prior to the search, in order to achieve satisfactory results in the shortest possible time and with the greatest positive impact on the process. We aim for the selection process to be a pleasant —and even growth- and learning-rich— experience for everyone involved. To achieve this, we offer close, empathetic and committed support to candidates.",
-          "svc.2.h": "HR Consulting",
-          "svc.2.p":
-            "We carry out organizational diagnosis processes that allow us to propose improvement actions for the processes evaluated.",
-          "svc.3.h": "Psychometric Assessments",
-          "svc.3.p":
-            "We carry out assessments using psychological techniques and tests that help us understand and define the level of development of the competencies required for each position and the candidate's suitability for the role in question. Potential assessments based on Elliot Jacques' theory, to gauge candidates' competencies and abilities and determine their potential to grow into roles of greater seniority and responsibility.",
-          "test.h": "Testimonials",
-          "test.1.q":
-            '"My experience with the consultancy was wonderful. The kindness, care and warmth of the people who supported my process were excellent. Only words of gratitude to Lara Ponce and María Paula Lobos, who were essential to achieving the goal."',
-          "test.1.r": "Process: cashier",
-          "test.2.q":
-            '"I want to thank LP Consultora for supporting me through this career change. I felt truly accompanied, always with advice and a human perspective, kept aware of every step I took; and after starting this new path they stayed in touch to address any need I might have. Thank you so much."',
-          "test.2.r": "Process: sales supervisor",
-          "test.3.q":
-            '"Thanks to the team at LP Consultora I landed the job I currently hold as an account executive. They supported me throughout the entire recruitment process, and even after it ended they kept writing to see how I was doing in the new job. I highly recommend them — they are excellent professionals, always committed to supporting you!"',
-          "test.3.r": "Process: account executive",
-          "clients.h": "Trusted by",
-          "bnav.home": "Home",
-          "bnav.cv": "CV",
-          "bnav.jobs": "Jobs",
-          "bnav.contact": "Contact",
-          "footer.tagline": "Specialists in the selection and management of human talent.",
-          "footer.contact": "Contact",
-          "cf.intro": "Tell us what you need and we will get back to you shortly.",
-          "cf.name": "Name",
-          "cf.email": "Email",
-          "cf.phone": "Phone (optional)",
-          "cf.topic": "Reason for contact",
-          "cf.topic.company": "Company hiring",
-          "cf.topic.candidate": "Candidate",
-          "cf.topic.other": "Other inquiry",
-          "cf.message": "Message",
-          "cf.consent": "I agree that LP Consultora may use this data to reply to my inquiry.",
-          "cf.send": "Send message",
-          "cf.sending": "Sending…",
-          "cf.ok": "Thank you! We received your message and will reply soon.",
-          "cf.err.invalid": "Please check the form and try again.",
-          "cf.err.rate": "You sent several messages in a row. Please try again later.",
-          "cf.err.server": "We could not send your message. Please email lara@lp-consultora.com.",
-          "footer.loc": "Location: Córdoba, Argentina.",
-          "map.pill": "Córdoba, Argentina",
-          "footer.privacy": "Privacy",
-          "footer.terms": "Terms of Use",
-          "footer.copy": "© 2026 LP Consultora. All rights reserved.",
-          "meta.title": "Recruitment & HR Consulting | LP Consultora",
-          "meta.desc":
-            "Human Resources consultancy in Córdoba, Argentina. Specialists in recruitment, HR consulting and psychometric assessments for national and international companies.",
+          "sending": "Sending…",
+          "send": "Send message",
+          "ok": "Thank you! We received your message and will reply soon.",
+          "invalid": "Please check the form and try again.",
+          "rate": "You sent several messages in a row. Please try again later.",
+          "server": "We could not send your message. Please email lara@lp-consultora.com."
         },
       };
-
+      let LANG = "es";
       const LANG_KEY = "lp-lang";
+      const originals = new WeakMap(); // element -> its Spanish text / html / attributes
+      const metaMap = [
+        ["title", 'meta[property="og:title"]', 'meta[name="twitter:title"]'],
+        ["desc", 'meta[name="description"]', 'meta[property="og:description"]'],
+        ["twdesc", 'meta[name="twitter:description"]'],
+        ["imgalt", 'meta[property="og:image:alt"]', 'meta[name="twitter:image:alt"]'],
+      ];
+      const metaEs = {};
+      metaMap.forEach(([k, ...sels]) =>
+        sels.forEach((sel) => {
+          const el = document.querySelector(sel);
+          if (el) metaEs[sel] = el.getAttribute("content");
+        })
+      );
+      const titleEs = document.title;
+
+      function swap(sel, attr, read, write) {
+        document.querySelectorAll(sel).forEach((el) => {
+          const o = originals.get(el) || {};
+          if (!(attr in o)) {
+            o[attr] = read(el);
+            originals.set(el, o);
+          }
+          const en = EN[el.getAttribute(attr)];
+          write(el, LANG === "en" && en != null ? en : o[attr]);
+        });
+      }
 
       function applyLang(lang) {
-        const dict = I18N[lang] || I18N.es;
-        document.querySelectorAll("[data-i18n]").forEach((el) => {
-          const v = dict[el.getAttribute("data-i18n")];
-          if (v != null) el.textContent = v;
-        });
-        document.querySelectorAll("[data-i18n-html]").forEach((el) => {
-          const v = dict[el.getAttribute("data-i18n-html")];
-          if (v != null) el.innerHTML = v;
-        });
-        document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
-          const v = dict[el.getAttribute("data-i18n-aria")];
-          if (v != null) el.setAttribute("aria-label", v);
-        });
+        LANG = lang === "en" ? "en" : "es";
+        swap("[data-i18n]", "data-i18n", (e) => e.textContent, (e, v) => (e.textContent = v));
+        swap("[data-i18n-html]", "data-i18n-html", (e) => e.innerHTML, (e, v) => (e.innerHTML = v));
+        swap("[data-i18n-aria]", "data-i18n-aria", (e) => e.getAttribute("aria-label"), (e, v) => e.setAttribute("aria-label", v));
+        swap("[data-i18n-alt]", "data-i18n-alt", (e) => e.getAttribute("alt"), (e, v) => e.setAttribute("alt", v));
 
-        // Document-level metadata
-        document.documentElement.lang = lang;
-        if (dict["meta.title"]) document.title = dict["meta.title"];
-        const md = document.querySelector('meta[name="description"]');
-        if (md && dict["meta.desc"]) md.setAttribute("content", dict["meta.desc"]);
+        document.documentElement.lang = LANG;
+        document.title = LANG === "en" ? EN_META.title : titleEs;
+        metaMap.forEach(([k, ...sels]) =>
+          sels.forEach((sel) => {
+            const el = document.querySelector(sel);
+            if (el) el.setAttribute("content", LANG === "en" ? EN_META[k] : metaEs[sel]);
+          })
+        );
         const ogLocale = document.querySelector('meta[property="og:locale"]');
-        if (ogLocale) ogLocale.setAttribute("content", lang === "en" ? "en_US" : "es_AR");
+        if (ogLocale) ogLocale.setAttribute("content", LANG === "en" ? "en_US" : "es_AR");
 
-        // Switcher active state
-        document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
-          const active = btn.getAttribute("data-lang-btn") === lang;
-          btn.classList.toggle("bg-primary", active);
-          btn.classList.toggle("text-on-primary", active);
-          btn.classList.toggle("text-on-surface-variant", !active);
-          btn.setAttribute("aria-pressed", active ? "true" : "false");
+        document.querySelectorAll("[data-lang-btn]").forEach((b) => {
+          b.setAttribute("aria-pressed", b.getAttribute("data-lang-btn") === LANG ? "true" : "false");
         });
-
+        const year = document.getElementById("year"); // recreated by the innerHTML swap above
+        if (year) year.textContent = new Date().getFullYear();
         try {
-          localStorage.setItem(LANG_KEY, lang);
+          localStorage.setItem(LANG_KEY, LANG);
         } catch (e) {}
       }
 
@@ -1386,16 +2275,37 @@
           const saved = localStorage.getItem(LANG_KEY);
           if (saved === "es" || saved === "en") return saved;
         } catch (e) {}
-        const nav =
-          (navigator.languages && navigator.languages[0]) || navigator.language || "es";
+        const nav = (navigator.languages && navigator.languages[0]) || navigator.language || "es";
         return nav.toLowerCase().indexOf("en") === 0 ? "en" : "es";
       }
 
-      document.querySelectorAll("[data-lang-btn]").forEach((btn) => {
-        btn.addEventListener("click", () => applyLang(btn.getAttribute("data-lang-btn")));
+      document.querySelectorAll("[data-lang-btn]").forEach((b) => {
+        b.addEventListener("click", () => applyLang(b.getAttribute("data-lang-btn")));
       });
-
       applyLang(detectLang());
+
+      // ---- Service CTAs pre-select the matching option in the contact form ----
+      (function () {
+        const select = document.getElementById("cf-service");
+        document.querySelectorAll("a[data-service]").forEach((a) => {
+          a.addEventListener("click", () => {
+            select.value = a.getAttribute("data-service");
+          });
+        });
+      })();
+
+      // ---- Floating WhatsApp hides while the contact section is on screen ----
+      (function () {
+        const wa = document.getElementById("waFloat");
+        const contact = document.getElementById("contacto");
+        if (!("IntersectionObserver" in window) || !wa || !contact) return;
+        new IntersectionObserver(
+          (entries) => {
+            entries.forEach((en) => wa.classList.toggle("is-hidden", en.isIntersecting));
+          },
+          { threshold: 0.15 }
+        ).observe(contact);
+      })();
 
       // ---- Contact form ----
       (function () {
@@ -1404,10 +2314,9 @@
         const submit = document.getElementById("cfSubmit");
         const status = document.getElementById("cfStatus");
         const openedAt = Date.now();
-        const t = (key) => (I18N[document.documentElement.lang] || I18N.es)[key];
 
         function show(key, kind) {
-          status.textContent = t(key);
+          status.textContent = MSG[LANG][key];
           status.className = "cf-status cf-status--" + kind;
         }
 
@@ -1415,10 +2324,10 @@
           e.preventDefault();
           const data = new FormData(form);
           data.set("t", String(Date.now() - openedAt));
-          data.set("lang", document.documentElement.lang);
+          data.set("lang", LANG);
 
           submit.disabled = true;
-          submit.textContent = t("cf.sending");
+          submit.textContent = MSG[LANG].sending;
           status.textContent = "";
           try {
             const res = await fetch(form.action, {
@@ -1430,19 +2339,19 @@
             const json = await res.json().catch(() => ({}));
             if (res.ok && json.ok) {
               form.reset();
-              show("cf.ok", "ok");
+              show("ok", "ok");
             } else if (json.error === "rate") {
-              show("cf.err.rate", "error");
+              show("rate", "error");
             } else if (res.status >= 500 || !json.error) {
-              show("cf.err.server", "error");
+              show("server", "error");
             } else {
-              show("cf.err.invalid", "error");
+              show("invalid", "error");
             }
           } catch (err) {
-            show("cf.err.server", "error");
+            show("server", "error");
           } finally {
             submit.disabled = false;
-            submit.textContent = t("cf.send");
+            submit.textContent = MSG[LANG].send;
           }
         });
       })();

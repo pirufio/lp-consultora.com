@@ -144,21 +144,27 @@ if ($elapsedMs < 2500) {
 $name = clean_line($_POST['name'] ?? '', 100);
 $email = clean_line($_POST['email'] ?? '', 150);
 $phone = clean_line($_POST['phone'] ?? '', 40);
-$topic = clean_line($_POST['topic'] ?? '', 20);
+$company = clean_line($_POST['company'] ?? '', 120);
+$service = clean_line($_POST['service'] ?? '', 30);
 $message = clean_text($_POST['message'] ?? '', 3000);
 $lang = (($_POST['lang'] ?? '') === 'en') ? 'en' : 'es';
 $consent = !empty($_POST['consent']);
 
-$topics = [
-    'company' => 'Empresa que busca talento / Company hiring',
-    'candidate' => 'Candidato/a / Candidate',
-    'other' => 'Otra consulta / Other',
+// Optional field: empty means "no service chosen"; anything else must be a known option.
+$services = [
+    'seleccion' => 'Selección de personal',
+    'psicotecnicas' => 'Evaluaciones psicotécnicas',
+    'mapeo' => 'Mapeo de talentos y potencial',
+    'assessment' => 'Assessment Center',
+    'consultoria' => 'Consultoría organizacional',
+    'talleres' => 'Talleres y desarrollo de equipos',
+    'otra' => 'Otra consulta',
 ];
 
 if (
     $name === '' ||
     !filter_var($email, FILTER_VALIDATE_EMAIL) ||
-    !isset($topics[$topic]) ||
+    ($service !== '' && !isset($services[$service])) ||
     utf8_len($message) < 5 ||
     !$consent
 ) {
@@ -216,9 +222,10 @@ $body = implode("\n", [
     'Nueva consulta desde lp-consultora.com',
     str_repeat('-', 40),
     'Nombre:   ' . $name,
+    'Empresa:  ' . ($company !== '' ? $company : '-'),
     'Email:    ' . $email,
     'Teléfono: ' . ($phone !== '' ? $phone : '-'),
-    'Tipo:     ' . $topics[$topic],
+    'Servicio: ' . ($service !== '' ? $services[$service] : '-'),
     'Idioma:   ' . $lang,
     str_repeat('-', 40),
     $message,
