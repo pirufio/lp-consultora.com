@@ -37,10 +37,12 @@ assets/
   tailwind.css                compiled Tailwind (static)
   fonts/                      fonts.css + f0..f11.woff2 (Inter, Montserrat subsets)
   favicon.svg
-  og-image-v3.jpg             1200x630 social share image (current; the filename is versioned because
-                              WhatsApp/Facebook cache previews by URL — bump to -v4 when it changes)
-  og-image.jpg, og-image-v2.jpg   same image, kept so older URLs don't 404
-  logo-mark.svg              the butterfly mark extracted from the official logo (hero art)
+  og-image-v4.jpg             1200x630 social share image (current; the filename is versioned because
+                              WhatsApp/Facebook cache previews by URL — bump to -v5 when it changes)
+  og-image.jpg, -v2, -v3      same image, kept so older URLs don't 404 or show a stale preview
+  logo-stacked.svg           stacked official logo (mark + LP over Consultora) in brand colors, hero art
+                              (built from the white footer logo; same paths, official gradients/gray)
+  logo-mark.svg              butterfly mark alone, extracted from the official logo
   lara.jpg                    portrait used in Quiénes somos (EXIF stripped)
   testimonial-adrian.jpg, testimonial-matias.jpg, testimonial-denise.jpg
   logo LP-final-02 1-8ff22ebb.svg   header, drawer and footer logo
